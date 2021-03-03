@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ecom website</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\glide.core.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ============= first menu bar : ================ -->
+
+    <header>
+      <nav class="menu-bar-first">
+        <div class="menu-bar-item shop-icon">
+          <a href=""> <i class="fa fa-shopping-bag"></i>Shooping Cart </a>
+        </div>
+
+        <button class="menu-bar-item sign-in-btn">Sign in</button>
+
+        <button class="menu-bar-item join-now-btn">Join now</button>
+      </nav>
+    </header>
+
+    <!-- =============== second menu bar : ================= -->
+
+    <nav class="menu-bar">
+      <div class="logo"><i class="fas fa-laptop"></i> logoHere</div>
+
+      <input type="checkbox" id="toggle-side-bar" />
+
+      <ul>
+        <li>
+          <a href=""> <i class="fas fa-home"></i>HOME </a>
+        </li>
+
+        <li class="drop-menu">
+          <a>
+            <div class="drop-icon-click">&lt;</div>
+            <span><i class="fas fa-th-list"></i> CATEGORY</span>
+            <div class="drop-icon">></div>
+          </a>
+
+          <ul class="drop-list">
+            <li><a href="">GRAPHIC CARDS</a></li>
+            <li><a href="">PROCESSORS</a></li>
+            <li><a href="">LAPTOPS</a></li>
+            <li><a href="">ACCESSORIES</a></li>
+          </ul>
+
+          <ul class="drop-list-click">
+            <li><a href="">GRAPHIC CARDS</a></li>
+            <li><a href="">PROCESSORS</a></li>
+            <li><a href="">LAPTOPS</a></li>
+            <li><a href="">ACCESSORIES</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href=""> <i class="fas fa-address-card"></i>ABOUT </a>
+        </li>
+
+        <li>
+          <a href=""> <i class="fas fa-phone"></i>CONTACT </a>
+        </li>
+      </ul>
+
+      <label for="toggle-side-bar"><i class="fas fa-bars"></i></label>
+
+      <label for="toggle-side-bar"><i class="fas fa-times"></i></label>
+    </nav>
+
+    <div class="head-img">
+      <!-- ================ Search bar + discription : ================= -->
+
+      <div class="disc-and-search-bar">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa iusto
+          nisi voluptate, cupiditate quidem maiores.
+        </p>
+        <div class="search-bar">
+          <input type="text" placeholder="Search for product" />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+
+      <!-- ======= Carousel : ========== -->
+
+      <div class="glide product-carousel">
+        <p class="product-carousel-title">BEST SELLERS</p>
+        <div
+          class="glide__track product-carousel-content"
+          data-glide-el="track"
+        >
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="product">
+                <div class="product-img">
+                  <img
+                    src="./img/Asus-gl504gv-thumb-1200x900-1560189851.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="product-info">
+                  <div class="rating-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="price">
+                    <p>$999.99 <span>$1299.99</span</p>
+                  </div>
+                  Asus GL502VM Gaming laptop
+                  <ul>
+                    <li>Ram : 16 GB</li>
+                    <li>Graphic : Nvidia GTX 1060</li>
+                    <li>Processor : i7 6700HQ</li>
+                    <li>Hard drive : 512 SSD</li>
+                  </ul>
+                </div>
+                <button>ADD TO CART</button>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="product">
+                <div class="product-img">
+                  <img src="./img/asus-rog-strix-g-g53.jpg" alt="" />
+                </div>
+                <div class="product-info">
+                  <div class="rating-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="price">
+                    <p>$999.99 <span>$1299.99</span</p>
+                  </div>
+                  Asus GL502VM Gaming laptop
+                  <ul>
+                    <li>Ram : 16 GB</li>
+                    <li>Graphic : Nvidia GTX 1060</li>
+                    <li>Processor : i7 6700HQ</li>
+                    <li>Hard drive : 512 SSD</li>
+                  </ul>
+                </div>
+                <button>ADD TO CART</button>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="product">
+                <div class="product-img">
+                  <img src="./img/34-235-011-V21.jpg" alt="" />
+                </div>
+                <div class="product-info">
+                  <div class="rating-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <div class="price">
+                    <p>$999.99 <span>$1299.99</span></p>
+                  </div>
+                  Asus GL502VM Gaming laptop
+                  <ul>
+                    <li>Ram : 16 GB</li>
+                    <li>Graphic : Nvidia GTX 1060</li>
+                    <li>Processor : i7 6700HQ</li>
+                    <li>Hard drive : 512 SSD</li>
+                  </ul>
+                </div>
+                <button>ADD TO CART</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="next-last-icons glide__arrows" data-glide-el="controls">
+          <div class="last glide__arrow glide__arrow--left" data-glide-dir="<">
+            <span>&lt;</span>
+          </div>
+
+          <div class="next glide__arrow glide__arrow--right" data-glide-dir=">">
+            <span>></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category -->
+    
+    <div class="category-container">
+      <div class="category">
+        <div class="item title">CATEGORY</div>
+        <div class="item item1">
+          <p>GRAPHIC CARDS</p>
+          <div>
+            <img src="./img/dust-proof-card.png" alt="">
+          </div>          
+          <button>VIEW MORE</button>
+        </div>
+        <div class="item item2">
+          <p>PROCESSORS</p>
+          <div>
+            <img src="./img/19-118-122-V16.jpg" alt="">
+          </div>
+          <button>VIEW MORE</button>
+        </div>
+        <div class="item item3">
+          <p>LAPTOPS</p>
+          <div>
+            <img src="./img/best-gaming-laptops-under-1000-dollars.jpg" alt="">
+          </div>
+          <button>VIEW MORE</button>
+        </div>
+        <div class="item item4">
+          <p>ACCESSORIES</p>
+          <div>
+            <img src="./img/Hc9ef78e51a174076afa92adbbd96bd3e9.jpg" alt="">
+            <img src="./img/Hc74c91e6d25942a8b9da9317094d5aacJ.jpg" alt="">
+            <img src="./img/Habb2b9ce30da4f0e935f38485ca93af7A.jpg" alt="">
+          </div>
+          <button>VIEW MORE</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  </body>
+</html>

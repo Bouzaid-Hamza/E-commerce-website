@@ -6,7 +6,7 @@ $(function() {
   
   $(".drop-icon").parent().click(function() {
     
-    if(window.innerWidth <= 930){
+    if(window.innerWidth <= 1100){
       
       if(dropIconPosition) {
         

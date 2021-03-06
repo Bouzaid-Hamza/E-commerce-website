@@ -42,16 +42,27 @@ $(function() {
 
   // carousel 
 
-  let config = {
+  let bestSellerConfig = {
     type: "carousel",
     perView: 1,
     gap: "60px",
-    autoplay: "4000",
+    autoplay: "3000",
     hoverpause: "true",
     animationDuration: "1000",
   };
 
-  new Glide(".glide", config).mount();
+  new Glide(".product-carousel", bestSellerConfig).mount();
+
+  let latestProductConfig = {
+    type: "carousel",
+    perView: 4,
+    gap: "10px",
+    autoplay: "3000",
+    hoverpause: "true",
+    animationDuration: "1000",
+  };
+
+  new Glide(".latest-products-container", latestProductConfig).mount();
 
 });
 

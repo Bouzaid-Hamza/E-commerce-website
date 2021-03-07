@@ -81,7 +81,7 @@ body {
 .sign-in-btn {
   border-radius: 2px;
   cursor: pointer;
-  box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px rgb(134, 175, 252);
 }
 
 .join-now-btn {
@@ -346,6 +346,7 @@ button:focus {
   justify-content: space-between;
   width: 500px;
   top: 50%;
+  transform: translateY(50%);
   position: absolute;
   margin-left: -42px; /*500 -416 = 84*/
 }
@@ -553,7 +554,7 @@ button:focus {
   color: white;
   padding: 11px 15px;
   transition: all 0.3s ease-in;
-  box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px rgb(134, 175, 252);
 }
 
 .item button:hover {

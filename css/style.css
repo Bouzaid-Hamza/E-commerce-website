@@ -79,8 +79,9 @@ body {
 
 .join-now-btn,
 .sign-in-btn {
-  border-radius: 1px;
+  border-radius: 2px;
   cursor: pointer;
+  box-shadow: 0 0 5px #ccc;
 }
 
 .join-now-btn {
@@ -488,7 +489,6 @@ button:focus {
 
 .category .item {
   border-radius: 3px;
-  box-shadow: 0px 0px 5px #ccc;
   background-color: white;
 }
 
@@ -536,7 +536,8 @@ button:focus {
   padding: 15px;
   background-color: var(--color1);
   color: white;
-  box-shadow: 0px 0px 3px var(--color1);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .item button {
@@ -552,6 +553,7 @@ button:focus {
   color: white;
   padding: 11px 15px;
   transition: all 0.3s ease-in;
+  box-shadow: 0 0 5px #ccc;
 }
 
 .item button:hover {

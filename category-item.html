@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Archivo", sans-serif;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-size: 13px;
+      }
+
+      body {
+        margin: 80px;
+        background-color: var(--color2);
+      }
+
+      :root {
+        --color1: #2a2d34;
+        --color2: #646872;
+        --color3: rgb(3, 92, 151);
+        --color4: #1eb7f3;
+      }
+
+      .category-item {
+        /* border-radius: 3px; */
+        display: inline-block;
+        background-color: white;
+      }
+
+      .category-img {
+        padding: 40px;
+      }
+
+      .category-name {
+        padding: 15px;
+        background-color: var(--color1);
+        color: white;
+        /* border-radius: 3px 3px 0 0; */
+      }
+
+      .first-btn {
+        background-color: var(--color1);
+        border: none;
+        color: white;
+        padding: 12px 15px;
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+        /* border-radius: 0 0 3px 3px; */
+      }
+
+      .first-btn:hover {
+        background-color: var(--color2);
+      }
+
+      .category-item .first-btn {
+        background-color: var(--color3);
+        border: 1px solid var(--color3);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 15px;
+        box-shadow: 0 0 5px rgb(134, 175, 252);
+      }
+
+      .category-item .first-btn:hover {
+        background-color: transparent;
+        color: var(--color3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="category-item" id="id-2">
+      <div class="category-name">Ultraportable</div>
+      <div class="category-img">
+        <img src="" width="300px" alt="" />
+      </div>
+      <button class="first-btn">VIEW MORE</button>
+    </div>
+
+    <script>
+      let myData;
+      let xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          myData = JSON.parse(this.responseText);
+          document.querySelector("#id-2 img").src =
+            myData.laptopCategory.ultraPortable.categoryImg;
+        }
+      };
+      xhr.open("GET", "data/products.json", true);
+      xhr.send();
+    </script>
+  </body>
+</html>

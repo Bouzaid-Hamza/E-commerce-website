@@ -1,277 +1,289 @@
 {
   "laptopCategory": {
-    "ultraPortable": [
-      {
-        "laptopName": "Bmorn Gateway GWTN156",
-        "resolution": "15.6 - 1920x1080",
-        "processor": "INTEL i5-1035G1",
-        "graphics": "INTEL UHD Graphics G1",
-        "memorySize": "16 GB DDR4",
-        "storageSize": "256 GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_3220_1.jpg",
-        "price": "$ 425 - 433"
-      },
-      {
-        "laptopName": "Lenovo Ideapad Flex 5 14",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "AMD Ryzen 3 4300U",
-        "graphics": "AMD Radeon RX Vega 5 (Picasso)",
-        "memorySize": "16 GB DDR4",
-        "storageSize": "512GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2640_1.jpg",
-        "price": "$ 491 - 500"
-      },
-      {
-        "laptopName": "HP 14",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "AMD Ryzen 3 3250U",
-        "graphics": "AMD Radeon RX Vega 3 (Picasso)",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "256GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-        "price": "$ 410 - 418"
-      },
-      {
-        "laptopName": "Asus VivoBook 17 R702 (NoAvb)",
-        "resolution": "17.3 - 1920x1080",
-        "processor": "AMD A12-9720P",
-        "graphics": "AMD Radeon R7 (Bristol-Ridge)(8830B)",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "256GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2572_1.jpg",
-        "price": "$ 400 - 411"
-      },
-      {
-        "laptopName": "Lenovo Ideapad 3 14",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "INTEL i5-1035G1",
-        "graphics": "INTEL UHD Graphics G1",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "512 GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2430_1.jpg",
-        "price": "$ 480 - 489"
-      },
-      {
-        "laptopName": "Acer Swift 3 SF314-42",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "AMD Ryzen 5 4500U",
-        "graphics": "AMD Radeon RX Vega 6 (Renoir)",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "256GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-        "price": "$ 573 - 584"
-      }
-    ],
-    "Business": [
-      {
-        "laptopName": "Bmorn Gateway GWTN156",
-        "resolution": "15.6 - 1920x1080",
-        "processor": "INTEL i5-1035G1",
-        "graphics": "INTEL UHD Graphics G1",
-        "memorySize": "16 GB DDR4",
-        "storageSize": "256 GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_3220_1.jpg",
-        "price": "$ 425 - 433"
-      },
-      {
-        "laptopName": "Lenovo Ideapad Flex 5 14",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "AMD Ryzen 3 4300U",
-        "graphics": "AMD Radeon RX Vega 5 (Picasso)",
-        "memorySize": "16 GB DDR4",
-        "storageSize": "512GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2640_1.jpg",
-        "price": "$ 491 - 500"
-      },
-      {
-        "laptopName": "HP 14",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "AMD Ryzen 3 3250U",
-        "graphics": "AMD Radeon RX Vega 3 (Picasso)",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "256GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-        "price": "$ 410 - 418"
-      },
-      {
-        "laptopName": "Asus VivoBook 17 R702 (NoAvb)",
-        "resolution": "17.3 - 1920x1080",
-        "processor": "AMD A12-9720P",
-        "graphics": "AMD Radeon R7 (Bristol-Ridge)(8830B)",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "256GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2572_1.jpg",
-        "price": "$ 400 - 411"
-      },
-      {
-        "laptopName": "Lenovo Ideapad 3 14",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "INTEL i5-1035G1",
-        "graphics": "INTEL UHD Graphics G1",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "512 GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2430_1.jpg",
-        "price": "$ 480 - 489"
-      },
-      {
-        "laptopName": "Acer Swift 3 SF314-42",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "AMD Ryzen 5 4500U",
-        "graphics": "AMD Radeon RX Vega 6 (Renoir)",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "256GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-        "price": "$ 573 - 584"
-      }
-    ],
-    "Gaming": [
-      {
-        "laptopName": "Bmorn Gateway GWTN156",
-        "resolution": "15.6 - 1920x1080",
-        "processor": "INTEL i5-1035G1",
-        "graphics": "INTEL UHD Graphics G1",
-        "memorySize": "16 GB DDR4",
-        "storageSize": "256 GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_3220_1.jpg",
-        "price": "$ 425 - 433"
-      },
-      {
-        "laptopName": "Lenovo Ideapad Flex 5 14",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "AMD Ryzen 3 4300U",
-        "graphics": "AMD Radeon RX Vega 5 (Picasso)",
-        "memorySize": "16 GB DDR4",
-        "storageSize": "512GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2640_1.jpg",
-        "price": "$ 491 - 500"
-      },
-      {
-        "laptopName": "HP 14",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "AMD Ryzen 3 3250U",
-        "graphics": "AMD Radeon RX Vega 3 (Picasso)",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "256GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-        "price": "$ 410 - 418"
-      },
-      {
-        "laptopName": "Asus VivoBook 17 R702 (NoAvb)",
-        "resolution": "17.3 - 1920x1080",
-        "processor": "AMD A12-9720P",
-        "graphics": "AMD Radeon R7 (Bristol-Ridge)(8830B)",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "256GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2572_1.jpg",
-        "price": "$ 400 - 411"
-      },
-      {
-        "laptopName": "Lenovo Ideapad 3 14",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "INTEL i5-1035G1",
-        "graphics": "INTEL UHD Graphics G1",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "512 GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2430_1.jpg",
-        "price": "$ 480 - 489"
-      },
-      {
-        "laptopName": "Acer Swift 3 SF314-42",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "AMD Ryzen 5 4500U",
-        "graphics": "AMD Radeon RX Vega 6 (Renoir)",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "256GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-        "price": "$ 573 - 584"
-      }
-    ],
-    "3dModeling": [
-      {
-        "laptopName": "Bmorn Gateway GWTN156",
-        "resolution": "15.6 - 1920x1080",
-        "processor": "INTEL i5-1035G1",
-        "graphics": "INTEL UHD Graphics G1",
-        "memorySize": "16 GB DDR4",
-        "storageSize": "256 GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_3220_1.jpg",
-        "price": "$ 425 - 433"
-      },
-      {
-        "laptopName": "Lenovo Ideapad Flex 5 14",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "AMD Ryzen 3 4300U",
-        "graphics": "AMD Radeon RX Vega 5 (Picasso)",
-        "memorySize": "16 GB DDR4",
-        "storageSize": "512GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2640_1.jpg",
-        "price": "$ 491 - 500"
-      },
-      {
-        "laptopName": "HP 14",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "AMD Ryzen 3 3250U",
-        "graphics": "AMD Radeon RX Vega 3 (Picasso)",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "256GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-        "price": "$ 410 - 418"
-      },
-      {
-        "laptopName": "Asus VivoBook 17 R702 (NoAvb)",
-        "resolution": "17.3 - 1920x1080",
-        "processor": "AMD A12-9720P",
-        "graphics": "AMD Radeon R7 (Bristol-Ridge)(8830B)",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "256GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2572_1.jpg",
-        "price": "$ 400 - 411"
-      },
-      {
-        "laptopName": "Lenovo Ideapad 3 14",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "INTEL i5-1035G1",
-        "graphics": "INTEL UHD Graphics G1",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "512 GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2430_1.jpg",
-        "price": "$ 480 - 489"
-      },
-      {
-        "laptopName": "Acer Swift 3 SF314-42",
-        "resolution": "14.0 - 1920x1080",
-        "processor": "AMD Ryzen 5 4500U",
-        "graphics": "AMD Radeon RX Vega 6 (Renoir)",
-        "memorySize": "8 GB DDR4",
-        "storageSize": "256GB - SSD",
-        "operatingSystem": "Windows 10 Home",
-        "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-        "price": "$ 573 - 584"
-      }
-    ]
+    "ultraPortable": {
+      "categoryList": [
+        {
+          "laptopName": "Bmorn Gateway GWTN156",
+          "resolution": "15.6 - 1920x1080",
+          "processor": "INTEL i5-1035G1",
+          "graphics": "INTEL UHD Graphics G1",
+          "memorySize": "16 GB DDR4",
+          "storageSize": "256 GB - SSD",
+          "operatingSystem": "Windows 10 Home",
+          "laptopImg": "https://noteb.com/res/img/models/thumb/t_3220_1.jpg",
+          "price": "$ 425 - 433"
+        },
+        {
+          "laptopName": "Lenovo Ideapad Flex 5 14",
+          "resolution": "14.0 - 1920x1080",
+          "processor": "AMD Ryzen 3 4300U",
+          "graphics": "AMD Radeon RX Vega 5 (Picasso)",
+          "memorySize": "16 GB DDR4",
+          "storageSize": "512GB - SSD",
+          "operatingSystem": "Windows 10 Home",
+          "laptopImg": "https://noteb.com/res/img/models/thumb/t_2640_1.jpg",
+          "price": "$ 491 - 500"
+        },
+        {
+          "laptopName": "HP 14",
+          "resolution": "14.0 - 1920x1080",
+          "processor": "AMD Ryzen 3 3250U",
+          "graphics": "AMD Radeon RX Vega 3 (Picasso)",
+          "memorySize": "8 GB DDR4",
+          "storageSize": "256GB - SSD",
+          "operatingSystem": "Windows 10 Home",
+          "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
+          "price": "$ 410 - 418"
+        },
+        {
+          "laptopName": "Asus VivoBook 17 R702 (NoAvb)",
+          "resolution": "17.3 - 1920x1080",
+          "processor": "AMD A12-9720P",
+          "graphics": "AMD Radeon R7 (Bristol-Ridge)(8830B)",
+          "memorySize": "8 GB DDR4",
+          "storageSize": "256GB - SSD",
+          "operatingSystem": "Windows 10 Home",
+          "laptopImg": "https://noteb.com/res/img/models/thumb/t_2572_1.jpg",
+          "price": "$ 400 - 411"
+        },
+        {
+          "laptopName": "Lenovo Ideapad 3 14",
+          "resolution": "14.0 - 1920x1080",
+          "processor": "INTEL i5-1035G1",
+          "graphics": "INTEL UHD Graphics G1",
+          "memorySize": "8 GB DDR4",
+          "storageSize": "512 GB - SSD",
+          "operatingSystem": "Windows 10 Home",
+          "laptopImg": "https://noteb.com/res/img/models/thumb/t_2430_1.jpg",
+          "price": "$ 480 - 489"
+        },
+        {
+          "laptopName": "Acer Swift 3 SF314-42",
+          "resolution": "14.0 - 1920x1080",
+          "processor": "AMD Ryzen 5 4500U",
+          "graphics": "AMD Radeon RX Vega 6 (Renoir)",
+          "memorySize": "8 GB DDR4",
+          "storageSize": "256GB - SSD",
+          "operatingSystem": "Windows 10 Home",
+          "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
+          "price": "$ 573 - 584"
+        }
+      ],
+      "categoryImg": "https://noteb.com/res/img/models/thumb/t_2430_1.jpg"
+    },
+    "Business": {
+      "categoryList": [
+        {
+          "laptopName": "Dell Vostro 15 3500",
+          "resolution": "15.6 - 1920x1080",
+          "processor": "INTEL i3-1115G4",
+          "graphics": "INTEL Intel UHD Graphics Xe G4 48 EU",
+          "memorySize": "8 GB DDR4",
+          "storageSize": "256 GB - SSD",
+          "operatingSystem": "Windows 10 Pro",
+          "laptopImg": "https://noteb.com/res/img/models/thumb/t_3122_1.jpg",
+          "price": "$ 494 - 503"
+        },
+        {
+          "laptopName": "Lenovo ThinkBook 14 G2",
+          "resolution": "14.0 - 1920x1080",
+          "processor": "AMD Ryzen 5 4500U",
+          "graphics": "AMD Radeon RX Vega 6 (Renoir)",
+          "memorySize": "8 GB DDR4 ",
+          "storageSize": "256 GB - SSD",
+          "operatingSystem": "Windows 10 Home",
+          "laptopImg": "https://noteb.com/res/img/models/thumb/t_2977_1.jpg",
+          "price": "$ 586 - 597"
+        },
+        {
+          "laptopName": "MSI Modern 15 A10",
+          "resolution": "15.6 - 1920x1080",
+          "processor": "INTEL i5-10210U",
+          "graphics": "INTEL HD Graphics 620",
+          "memorySize": "8 GB DDR4",
+          "storageSize": "512 GB - SSD",
+          "operatingSystem": "Windows 10 Home",
+          "laptopImg": "https://noteb.com/res/img/models/thumb/t_2451_1.jpg",
+          "price": "$ 601 - 613"
+        },
+        {
+          "laptopName": "Dell Vostro 15 5581",
+          "resolution": "15.6 - 1920x1080",
+          "processor": "INTEL i5-8265U",
+          "graphics": "INTEL HD Graphics 620",
+          "memorySize": "8 GB DDR4",
+          "storageSize": "256GB - SSD",
+          "operatingSystem": "Windows 10 Pro",
+          "laptopImg": "https://noteb.com/res/img/models/thumb/t_1719_1.jpg",
+          "price": "$ 594 - 606"
+        },
+        {
+          "laptopName": "HP ProBook 455",
+          "resolution": "15.6 - 1920x1080",
+          "processor": "AMD Ryzen 5 4500U",
+          "graphics": "AMD Radeon RX Vega 6 (Renoir)",
+          "memorySize": "8 GB DDR4",
+          "storageSize": "256 GB - SSD",
+          "operatingSystem": "Windows 10 Pro",
+          "laptopImg": "https://noteb.com/res/img/models/2652_1.jpg",
+          "price": "$ 719 - 733"
+        },
+        {
+          "laptopName": "Acer TravelMate X5 X514",
+          "resolution": "14.0 - 1920x1080",
+          "processor": "NTEL i5-8265U",
+          "graphics": "INTEL HD Graphics 620",
+          "memorySize": "8 GB DDR4",
+          "storageSize": "256GB - SSD",
+          "operatingSystem": "Windows 10 Pro",
+          "laptopImg": "https://noteb.com/res/img/models/thumb/t_2450_1.jpg",
+          "price": "$ 643 - 656"
+        }
+      ],
+      "categoryImg": "https://noteb.com/res/img/models/thumb/t_2062_1.jpg"
+    },
+    "Gaming": {
+      "categoryList": [
+        {
+          "laptopName": "Tongfang GK5NP5O",
+          "resolution": "15.6 - 1920x1080",
+          "processor": "AMD Ryzen 5 4600H",
+          "graphics": "NVIDIA GeForce GTX 1650 GDDR5",
+          "memorySize": "8 GB DDR4",
+          "storageSize": "256 GB - SSD",
+          "operatingSystem": "Windows 10 Home",
+          "laptopImg": "https://noteb.com/res/img/models/thumb/t_2729_1.jpg",
+          "price": "$ 593 - 604"
+        },
+        {
+          "laptopName": "Lenovo Ideapad L340-15",
+          "resolution": "15.6 - 1920x1080",
+          "processor": "INTEL i5-9300HF",
+          "graphics": "NVIDIA GeForce GTX 1650 GDDR5",
+          "memorySize": "8 GB DDR4",
+          "storageSize": "256 GB - SSD",
+          "operatingSystem": "Windows 10 Home",
+          "laptopImg": "https://noteb.com/res/img/models/thumb/t_1977_1.jpg",
+          "price": "$ 545 - 556"
+        },
+        {
+          "laptopName": "Tongfang GK5MR0O",
+          "resolution": "15.6 - 1920x1080",
+          "processor": "INTEL i5-10300H",
+          "graphics": "NVIDIA GeForce RTX 2060",
+          "memorySize": "8 GB DDR4",
+          "storageSize": "256 GB - SSD",
+          "operatingSystem": "Windows 10 Home",
+          "laptopImg": "https://noteb.com/res/img/models/3124_1.jpg",
+          "price": "$ 791 - 806"
+        },
+        {
+          "laptopName": "MSI Gaming GF75",
+          "resolution": "17.3 - 1920x1080",
+          "processor": "INTEL i5-10300H",
+          "graphics": "NVIDIA GeForce GTX 1650 GDDR6",
+          "memorySize": "8 GB DDR4",
+          "storageSize": "512 GB - SSD",
+          "operatingSystem": "Windows 10 Home",
+          "laptopImg": "https://noteb.com/res/img/models/2841_1.jpg",
+          "price": "$ 781 - 796"
+        },
+        {
+          "laptopName": "Asus TUF A15",
+          "resolution": "15.6 - 1920x1080",
+          "processor": "AMD Ryzen 5 4600H",
+          "graphics": "NVIDIA GeForce GTX 1660 Ti",
+          "memorySize": "8 GB DDR4",
+          "storageSize": "512 GB - SSD",
+          "operatingSystem": "Windows 10 Home",
+          "laptopImg": "https://noteb.com/res/img/models/2388_1.jpg",
+          "price": "$ 841 - 858"
+        },
+        {
+          "laptopName": "Dell Gaming G5 15",
+          "resolution": "15.6 - 1920x1080",
+          "processor": "INTEL i5-10300H",
+          "graphics": "NVIDIA GeForce GTX 1650 Ti",
+          "memorySize": "8 GB DDR4",
+          "storageSize": "256GB - SSD",
+          "operatingSystem": "Windows 10 Home",
+          "laptopImg": "https://noteb.com/res/img/models/2722_1.jpg",
+          "price": "$ 804 - 820"
+        }
+      ],
+      "categoryImg": "https://noteb.com/res/img/models/2665_2.jpg"
+    },
+    "3dModeling": {
+      "categoryList": [
+        {
+          "laptopName": "Lenovo Thinkpad P73",
+          "resolution": "17.3 - 3840x2160",
+          "processor": "INTEL i7-9850H",
+          "graphics": "NVIDIA Quadro T2000",
+          "memorySize": "16 GB DDR4",
+          "storageSize": "512 GB - SSD",
+          "operatingSystem": "Windows 10 Pro ",
+          "laptopImg": "https://noteb.com/res/img/models/2061_1.jpg",
+          "price": "$ 2177 - 2220"
+        },
+        {
+          "laptopName": "Dell Precision 15 7540",
+          "resolution": "15.6 - 1920x1080",
+          "processor": "INTEL i7-9850H",
+          "graphics": "NVIDIA Quadro T2000",
+          "memorySize": "32 GB DDR4",
+          "storageSize": "512GB - SSD",
+          "operatingSystem": "Windows 10 Pro",
+          "laptopImg": "https://noteb.com/res/img/models/2330_1.jpg",
+          "price": "$ 1979 - 2018"
+        },
+        {
+          "laptopName": "HP Zbook Studio G7",
+          "resolution": "15.6 - 1920x1080",
+          "processor": "INTEL i7-10750H",
+          "graphics": "NVIDIA Quadro T2000 Max-Q",
+          "memorySize": "16 GB DDR4 ",
+          "storageSize": "512 GB - SSD",
+          "operatingSystem": "Windows 10 Pro ",
+          "laptopImg": "https://noteb.com/res/img/models/2902_1.jpg",
+          "price": "$ 1979 - 2018"
+        },
+        {
+          "laptopName": "MSI Workstation WS66",
+          "resolution": "15.6 - 1920x1080",
+          "processor": "INTEL i7-10875H",
+          "graphics": "NVIDIA Quadro RTX 3000",
+          "memorySize": "32 GB DDR4 ",
+          "storageSize": "1024 GB - SSD",
+          "operatingSystem": "Windows 10 Pro ",
+          "laptopImg": "https://noteb.com/res/img/models/2813_1.jpg",
+          "price": "$ 2426 - 2475"
+        },
+        {
+          "laptopName": "Asus Studio ProArt 17",
+          "resolution": "17.0 - 1920x1080",
+          "processor": "INTEL i7-9750H",
+          "graphics": "NVIDIA Quadro RTX 3000 Max-Q",
+          "memorySize": "16 GB DDR4 ",
+          "storageSize": "1024 GB - SSD",
+          "operatingSystem": "Windows 10 Pro",
+          "laptopImg": "https://noteb.com/res/img/models/2360_1.jpg",
+          "price": "$ 1979 - 2018"
+        },
+        {
+          "laptopName": "HP Zbook 17 G6",
+          "resolution": "17.3 - 1920x1080",
+          "processor": "INTEL i7-9750H",
+          "graphics": "NVIDIA Quadro RTX 3000",
+          "memorySize": "16 GB DDR4",
+          "storageSize": "512 GB - SSD",
+          "operatingSystem": "Windows 10 Pro",
+          "laptopImg": "https://noteb.com/res/img/models/2080_1.jpg",
+          "price": "$ 2544 - 2595"
+        }
+      ],
+      "categoryImg": "https://noteb.com/res/img/models/1963_1.jpg"
+    }
   },
   "latestProduct": [
     {
@@ -343,37 +355,37 @@
   ],
   "bestSellers": [
     {
-      "laptopName": "Acer Swift 3 SF314-42",
-      "resolution": "14.0 - 1920x1080",
-      "processor": "AMD Ryzen 5 4500U",
-      "graphics": "AMD Radeon RX Vega 6 (Renoir)",
+      "laptopName": "Asus VivoBook 17 R702 (NoAvb)",
+      "resolution": "17.3 - 1920x1080",
+      "processor": "AMD A12-9720P",
+      "graphics": "AMD Radeon R7 (Bristol-Ridge)(8830B)",
       "memorySize": "8 GB DDR4",
       "storageSize": "256GB - SSD",
       "operatingSystem": "Windows 10 Home",
-      "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-      "price": "$ 573 - 584"
+      "laptopImg": "https://noteb.com/res/img/models/thumb/t_2572_1.jpg",
+      "price": "$ 400 - 411"
     },
     {
-      "laptopName": "Acer Swift 3 SF314-42",
-      "resolution": "14.0 - 1920x1080",
-      "processor": "AMD Ryzen 5 4500U",
-      "graphics": "AMD Radeon RX Vega 6 (Renoir)",
+      "laptopName": "Lenovo Ideapad L340-15",
+      "resolution": "15.6 - 1920x1080",
+      "processor": "INTEL i5-9300HF",
+      "graphics": "NVIDIA GeForce GTX 1650 GDDR5",
       "memorySize": "8 GB DDR4",
-      "storageSize": "256GB - SSD",
+      "storageSize": "256 GB - SSD",
       "operatingSystem": "Windows 10 Home",
-      "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-      "price": "$ 573 - 584"
+      "laptopImg": "https://noteb.com/res/img/models/thumb/t_1977_1.jpg",
+      "price": "$ 545 - 556"
     },
     {
-      "laptopName": "Acer Swift 3 SF314-42",
-      "resolution": "14.0 - 1920x1080",
-      "processor": "AMD Ryzen 5 4500U",
-      "graphics": "AMD Radeon RX Vega 6 (Renoir)",
+      "laptopName": "Dell Gaming G5 15",
+      "resolution": "15.6 - 1920x1080",
+      "processor": "INTEL i5-10300H",
+      "graphics": "NVIDIA GeForce GTX 1650 Ti",
       "memorySize": "8 GB DDR4",
       "storageSize": "256GB - SSD",
       "operatingSystem": "Windows 10 Home",
-      "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-      "price": "$ 573 - 584"
+      "laptopImg": "https://noteb.com/res/img/models/2722_1.jpg",
+      "price": "$ 804 - 820"
     }
   ]
 }

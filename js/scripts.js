@@ -66,4 +66,18 @@ $(function() {
 
 });
 
+let myData;
+let xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    myData = JSON.parse(this.responseText);
+    console.log(myData);
+  }
+}
+xhr.open("GET", "./data/products.json", true);
+xhr.send();
+
+
+
+
 

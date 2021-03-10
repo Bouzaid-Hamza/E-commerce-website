@@ -287,15 +287,15 @@
   },
   "latestProduct": [
     {
-      "laptopName": "Acer Swift 3 SF314-42",
+      "laptopName": "HP 14",
       "resolution": "14.0 - 1920x1080",
-      "processor": "AMD Ryzen 5 4500U",
-      "graphics": "AMD Radeon RX Vega 6 (Renoir)",
+      "processor": "AMD Ryzen 3 3250U",
+      "graphics": "AMD Radeon RX Vega 3 (Picasso)",
       "memorySize": "8 GB DDR4",
       "storageSize": "256GB - SSD",
       "operatingSystem": "Windows 10 Home",
       "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-      "price": "$ 573 - 584"
+      "price": "$ 410 - 418"
     },
     {
       "laptopName": "Acer Swift 3 SF314-42",
@@ -309,48 +309,48 @@
       "price": "$ 573 - 584"
     },
     {
-      "laptopName": "Acer Swift 3 SF314-42",
-      "resolution": "14.0 - 1920x1080",
-      "processor": "AMD Ryzen 5 4500U",
-      "graphics": "AMD Radeon RX Vega 6 (Renoir)",
+      "laptopName": "Dell Vostro 15 3500",
+      "resolution": "15.6 - 1920x1080",
+      "processor": "INTEL i3-1115G4",
+      "graphics": "INTEL Intel UHD Graphics Xe G4 48 EU",
       "memorySize": "8 GB DDR4",
-      "storageSize": "256GB - SSD",
-      "operatingSystem": "Windows 10 Home",
-      "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-      "price": "$ 573 - 584"
+      "storageSize": "256 GB - SSD",
+      "operatingSystem": "Windows 10 Pro",
+      "laptopImg": "https://noteb.com/res/img/models/thumb/t_3122_1.jpg",
+      "price": "$ 494 - 503"
     },
     {
-      "laptopName": "Acer Swift 3 SF314-42",
-      "resolution": "14.0 - 1920x1080",
-      "processor": "AMD Ryzen 5 4500U",
-      "graphics": "AMD Radeon RX Vega 6 (Renoir)",
+      "laptopName": "Tongfang GK5NP5O",
+      "resolution": "15.6 - 1920x1080",
+      "processor": "AMD Ryzen 5 4600H",
+      "graphics": "NVIDIA GeForce GTX 1650 GDDR5",
       "memorySize": "8 GB DDR4",
-      "storageSize": "256GB - SSD",
+      "storageSize": "256 GB - SSD",
       "operatingSystem": "Windows 10 Home",
-      "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-      "price": "$ 573 - 584"
+      "laptopImg": "https://noteb.com/res/img/models/thumb/t_2729_1.jpg",
+      "price": "$ 593 - 604"
     },
     {
-      "laptopName": "Acer Swift 3 SF314-42",
-      "resolution": "14.0 - 1920x1080",
-      "processor": "AMD Ryzen 5 4500U",
-      "graphics": "AMD Radeon RX Vega 6 (Renoir)",
+      "laptopName": "Dell Gaming G5 15",
+      "resolution": "15.6 - 1920x1080",
+      "processor": "INTEL i5-10300H",
+      "graphics": "NVIDIA GeForce GTX 1650 Ti",
       "memorySize": "8 GB DDR4",
       "storageSize": "256GB - SSD",
       "operatingSystem": "Windows 10 Home",
-      "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-      "price": "$ 573 - 584"
+      "laptopImg": "https://noteb.com/res/img/models/2722_1.jpg",
+      "price": "$ 804 - 820"
     },
     {
-      "laptopName": "Acer Swift 3 SF314-42",
-      "resolution": "14.0 - 1920x1080",
-      "processor": "AMD Ryzen 5 4500U",
-      "graphics": "AMD Radeon RX Vega 6 (Renoir)",
-      "memorySize": "8 GB DDR4",
-      "storageSize": "256GB - SSD",
-      "operatingSystem": "Windows 10 Home",
-      "laptopImg": "https://noteb.com/res/img/models/thumb/t_2690_1.jpg",
-      "price": "$ 573 - 584"
+      "laptopName": "MSI Workstation WS66",
+      "resolution": "15.6 - 1920x1080",
+      "processor": "INTEL i7-10875H",
+      "graphics": "NVIDIA Quadro RTX 3000",
+      "memorySize": "32 GB DDR4 ",
+      "storageSize": "1024 GB - SSD",
+      "operatingSystem": "Windows 10 Pro ",
+      "laptopImg": "https://noteb.com/res/img/models/2813_1.jpg",
+      "price": "$ 2426 - 2475"
     }
   ],
   "bestSellers": [

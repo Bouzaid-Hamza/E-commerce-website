@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 1.6em;
+      }
+
+      body {
+        margin: 80px;
+        background-color: var(--color2);
+      }
+
+      :root {
+        --color1: #2a2d34;
+        --color2: #646872;
+        --color3: rgb(3, 92, 151);
+        --color4: #1eb7f3;
+      }
+
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+      }
+      .feature-item {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 25px;
+      }
+      .features i {
+        font-size: 25px;
+        color: var(--color3);
+        background-color: rgb(238, 238, 238);
+        padding: 10px;
+      }
+      .feature-name {
+        font-size: 16px;
+        color: var(--color2);
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      .feature-description {
+        text-align: center;
+        color: var(--color2);
+        margin-top: 15px;
+        max-width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="features">
+      <div class="feature-item">
+        <i class="fa fa-umbrella"></i>
+        <div class="feature-name">24/7 Support</div>
+        <div class="feature-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          obcaecati inventore eaque.
+        </div>
+      </div>
+      <div class="feature-item">
+        <i class="fa fa-lock"></i>
+        <div class="feature-name">Advanced Security</div>
+        <div class="feature-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          obcaecati inventore eaque.
+        </div>
+      </div>
+      <div class="feature-item">
+        <i class="fa fa-rocket"></i>
+        <div class="feature-name">Fast Delevery</div>
+        <div class="feature-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          obcaecati inventore eaque.
+        </div>
+      </div>
+      <div class="feature-item">
+        <i class="fa fa-check"></i>
+        <div class="feature-name">High Quality Products</div>
+        <div class="feature-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          obcaecati inventore eaque.
+        </div>
+      </div>
+    </div>
+    <div class="load" style="max-width: 1200px"></div>
+
+    <script>
+      // async function load_home() {
+      //   document.querySelector(".load").innerHTML = await (
+      //     await fetch("contact-us.html")
+      //   ).text();
+      // }
+      // load_home();
+
+      // let xhr = new XMLHttpRequest();
+      // xhr.onreadystatechange = function () {
+      //   if (this.readyState == 4 && this.status == 200) {
+      //     document.querySelector(".load").innerHTML = this.responseText;
+      //   }
+      // };
+      // xhr.open("GET", "contact-us.html", true);
+      // xhr.send();
+    </script>
+  </body>
+</html>

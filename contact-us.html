@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 1.6em;
+      }
+
+      body {
+        margin: 80px;
+        background-color: var(--color2);
+      }
+
+      :root {
+        --color1: #2a2d34;
+        --color2: #646872;
+        --color3: rgb(3, 92, 151);
+        --color4: #1eb7f3;
+      }
+
+      /*====== CONTACT INFO ======*/
+
+      .contact-us {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+        justify-content: space-between;
+        background-color: white;
+      }
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 300px;
+        margin-top: 40px;
+      }
+
+      .contact-us p {
+        font-weight: bold;
+        color: var(--color2);
+        font-size: 16px;
+      }
+
+      .contact-us i {
+        font-size: 16px;
+        background-color: var(--color3);
+        padding: 10px;
+        color: white;
+        min-width: 36px;
+        margin-right: 10px;
+        border-radius: 4px;
+      }
+
+      /*====== EMAIL FORM ======*/
+
+      .email-form {
+        width: 500px;
+        margin-top: 40px;
+      }
+
+      .email-form p {
+        margin-bottom: 20px;
+      }
+
+      #email_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      :is(#email_form) input:not(#submit_form),
+      textarea {
+        height: 50px;
+        border: 1px solid #bbb;
+        padding: 10px;
+        font-family: Arial;
+        box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+        transition: border-color 0.15s linear, background-color 0.15s linear;
+        cursor: text;
+        margin-top: 20px;
+      }
+      :is(#email_form) textarea {
+        height: 120px;
+      }
+      #submit_form {
+        background-color: var(--color2);
+        color: white;
+        font-weight: bold;
+        height: 50px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in;
+        margin-top: 20px;
+      }
+      #submit_form:hover {
+        background-color: var(--color1);
+      }
+      :is(#email_form) input:not(#submit_form):focus,
+      textarea:focus {
+        background-color: rgb(0 0 0 / 5%);
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact-us">
+      <div class="contact-info">
+        <p>Feel Free To Contact With Us !</p>
+        <div>
+          <i class="fa fa-phone"></i>
+          <span>+880 1680 597617</span>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <span>contact@yourdomain.net</span>
+        </div>
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <span>327 Collins Street Melbourne, Australia</span>
+        </div>
+        <div>
+          <i class="fa fa-globe"></i>
+          <span>www.yourdomain.net</span>
+        </div>
+      </div>
+      <div class="email-form">
+        <p>Send Us A Message</p>
+        <form
+          action="https://postmail.invotes.com/send"
+          method="post"
+          id="email_form"
+        >
+          <input type="text" name="subject" placeholder="Subject" />
+
+          <input
+            type="hidden"
+            name="access_token"
+            value="fhyzmtr1sbxwj84el65hh243"
+          />
+
+          <input
+            type="hidden"
+            name="success_url"
+            value=".?message=Email+Successfully+Sent%21&isError=0"
+          />
+
+          <input
+            type="hidden"
+            name="error_url"
+            value=".?message=Email+could+not+be+sent.&isError=1"
+          />
+
+          <input type="text" name="reply_to" placeholder="Your Email" />
+
+          <input
+            type="text"
+            name="extra_phone_number"
+            placeholder="Phone Number"
+          />
+
+          <input type="hidden" name="sms_format" value="true" />
+
+          <textarea name="text" placeholder="Message"></textarea>
+
+          <input id="submit_form" type="submit" value="SEND" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

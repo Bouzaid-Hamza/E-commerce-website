@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\glide.core.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-size: 1.6rem;
+        outline: none;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 1.6rem;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      h4 {
+        font-size: 1.4rem;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      html {
+        font-size: 62.5%;
+        font-family: "Roboto", sans-serif;
+        /* margin: 80px; */
+        /* background-color: var(--color2); */
+      }
+
+      :root {
+        --color1: #2a2d34;
+        --color2: #646872;
+        --color3: rgb(3, 92, 151);
+        --color4: #1eb7f3;
+        --color5: #283593;
+        --color6: #3949ab;
+        --color7: #2b8f1b;
+      }
+
+      .user-review-section {
+        min-height: 55rem;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(100, 7, 100, 0.8)),
+          url("img/pexels-photo-238118.jpeg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        overflow: hidden;
+      }
+
+      .user-review-section h2 {
+        color: rgb(214, 164, 0);
+      }
+
+      .user-review-section > p {
+        max-width: 600px;
+        text-align: center;
+      }
+
+      .user-review-section hr {
+        width: 10rem;
+        padding: 0.2rem;
+        border: none;
+        background-color: rgb(0, 174, 255);
+      }
+
+      .user-review {
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        max-width: 55rem;
+        border: 1px solid white;
+        position: relative;
+        background-color: var(--color6);
+      }
+
+      .user-review::before {
+        content: open-quote open-quote;
+        position: absolute;
+        top: 0.25rem;
+        left: 1rem;
+        font-size: 6rem;
+        font-family: Arial, sans-serif;
+      }
+
+      .user-img img {
+        width: 8rem;
+        border-radius: 50%;
+        margin-right: 2rem;
+      }
+
+      .user-name {
+        color: rgb(255, 196, 0);
+      }
+
+      .user-review div:last-child {
+        justify-content: space-between;
+        min-height: 14rem;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .user-review-section .glide__track {
+        max-width: 55rem;
+      }
+
+      @media only screen and (max-width: 550px) {
+        .user-review {
+          max-width: 25rem;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .user-img img {
+          margin: 0;
+        }
+
+        .user-review-section .glide__track {
+          max-width: 25rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="user-review-section">
+      <h2>What Client’s Say</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dicta
+        recusandae odit voluptas ducimus assumenda ut architecto blanditiis fuga
+        accusantium.
+      </p>
+      <hr />
+      <div class="glide__track product-carousel-content" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <div class="user-review">
+              <div class="user-img">
+                <img src="img/profile_user.jpg" alt="" />
+              </div>
+              <div>
+                <h3 class="user-name">Michael Logan</h3>
+                <p class="review">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  saepe, nobis debitis repellendus incidunt veritatis,
+                  perspiciatis molestiae fuga excepturi earum explicabo, eveniet
+                  ipsam optio odit?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div class="user-review">
+              <div class="user-img">
+                <img src="img/Max-R_Headshot (1).jpg" alt="" />
+              </div>
+              <div>
+                <h3 class="user-name">Michael Logan</h3>
+                <p class="review">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  saepe, nobis debitis repellendus incidunt veritatis,
+                  perspiciatis molestiae fuga excepturi earum explicabo, eveniet
+                  ipsam optio odit?
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div class="user-review">
+              <div class="user-img">
+                <img src="img/Greg-Emerson-edit-2.jpg" alt="" />
+              </div>
+              <div>
+                <h3 class="user-name">Michael Logan</h3>
+                <p class="review">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  saepe, nobis debitis repellendus incidunt veritatis,
+                  perspiciatis molestiae fuga excepturi earum explicabo, eveniet
+                  ipsam optio odit?
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      let reviewConfig = {
+        type: "carousel",
+        perView: 2,
+        gap: "10px",
+        autoplay: "4000",
+        hoverpause: "true",
+        animationDuration: "2000",
+        breakpoints: {
+          1150: {
+            perView: 1,
+          },
+        },
+      };
+
+      new Glide(".user-review-section", reviewConfig).mount();
+    </script>
+  </body>
+</html>

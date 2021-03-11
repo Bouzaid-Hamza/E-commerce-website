@@ -14,14 +14,14 @@
     <style>
       * {
         box-sizing: border-box;
-        font-family: "Archivo", sans-serif;
         margin: 0;
         padding: 0;
         text-decoration: none;
-        font-size: 13px;
       }
 
-      body {
+      html {
+        font-size: 62.5%;
+        font-family: "Roboto", sans-serif;
         margin: 80px;
         background-color: var(--color2);
       }
@@ -31,37 +31,42 @@
         --color2: #646872;
         --color3: rgb(3, 92, 151);
         --color4: #1eb7f3;
+        --color5: #283593;
+        --color6: #3949ab;
+        --color7: #2b8f1b;
       }
 
       .category-item {
-        /* border-radius: 3px; */
+        font-size: 1.4rem;
         display: inline-block;
         background-color: white;
       }
 
       .category-img {
-        padding: 40px;
+        padding: 4rem;
       }
 
       .category-name {
-        padding: 15px;
+        padding: 1.5rem;
         background-color: var(--color1);
         color: white;
-        /* border-radius: 3px 3px 0 0; */
       }
 
       .first-btn {
         background-color: var(--color1);
         border: none;
         color: white;
-        padding: 12px 15px;
+        padding: 1.2rem 1.5rem;
         transition: all 0.3s ease-in;
         cursor: pointer;
-        /* border-radius: 0 0 3px 3px; */
       }
 
       .first-btn:hover {
         background-color: var(--color2);
+      }
+
+      .first-btn:focus {
+        outline: none;
       }
 
       .category-item .first-btn {
@@ -70,7 +75,7 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        margin-bottom: 15px;
+        margin-bottom: 1.5rem;
         box-shadow: 0 0 5px rgb(134, 175, 252);
       }
 
@@ -91,16 +96,13 @@
 
     <script>
       let myData;
-      let xhr = new XMLHttpRequest();
-      xhr.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          myData = JSON.parse(this.responseText);
+      fetch("data/products.json")
+        .then((res) => res.json())
+        .then((data) => {
+          myData = data;
           document.querySelector("#id-2 img").src =
             myData.laptopCategory.ultraPortable.categoryImg;
-        }
-      };
-      xhr.open("GET", "data/products.json", true);
-      xhr.send();
+        });
     </script>
   </body>
 </html>

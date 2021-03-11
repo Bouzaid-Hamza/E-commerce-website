@@ -1,7 +1,7 @@
 {
   "laptopCategory": {
     "ultraPortable": {
-      "categoryList": [
+      "laptopsList": [
         {
           "laptopName": "Bmorn Gateway GWTN156",
           "resolution": "15.6 - 1920x1080",
@@ -72,7 +72,7 @@
       "categoryImg": "https://noteb.com/res/img/models/thumb/t_2430_1.jpg"
     },
     "Business": {
-      "categoryList": [
+      "laptopsList": [
         {
           "laptopName": "Dell Vostro 15 3500",
           "resolution": "15.6 - 1920x1080",
@@ -143,7 +143,7 @@
       "categoryImg": "https://noteb.com/res/img/models/thumb/t_2062_1.jpg"
     },
     "Gaming": {
-      "categoryList": [
+      "laptopsList": [
         {
           "laptopName": "Tongfang GK5NP5O",
           "resolution": "15.6 - 1920x1080",
@@ -214,7 +214,7 @@
       "categoryImg": "https://noteb.com/res/img/models/2665_2.jpg"
     },
     "3dModeling": {
-      "categoryList": [
+      "laptopsList": [
         {
           "laptopName": "Lenovo Thinkpad P73",
           "resolution": "17.3 - 3840x2160",

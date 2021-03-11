@@ -14,14 +14,14 @@
     <style>
       * {
         box-sizing: border-box;
-        font-family: "Archivo", sans-serif;
         margin: 0;
         padding: 0;
         text-decoration: none;
-        font-size: 13px;
       }
 
-      body {
+      html {
+        font-size: 62.5%;
+        font-family: "Roboto", sans-serif;
         margin: 80px;
         background-color: var(--color2);
       }
@@ -31,58 +31,92 @@
         --color2: #646872;
         --color3: rgb(3, 92, 151);
         --color4: #1eb7f3;
+        --color5: #283593;
+        --color6: #3949ab;
+        --color7: #2b8f1b;
       }
 
       .product {
         background-color: white;
-        display: inline-block;
-        /* border: 4px solid var(--color1); */
-        /* border-radius: 3px; */
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-width: 35rem;
+        font-size: 1.4rem;
+      }
+
+      .best-seller::before {
+        content: "";
+        width: 3rem;
+        height: 3rem;
+        background-color: rgb(0, 150, 0);
+        position: absolute;
+        right: -1rem;
+        transform: rotate(45deg);
+        top: 3rem;
+        z-index: -1;
+      }
+
+      .best-seller::after {
+        content: attr(data-label);
+        position: absolute;
+        top: 0.7rem;
+        padding: 0.8em;
+        text-align: center;
+        color: white;
+        right: -1.6rem;
+        background-color: var(--color7);
+        box-shadow: 2px 2px 15px rgba(26, 35, 126, 0.5);
+        border-bottom-left-radius: 15px;
       }
 
       .product-img {
-        padding: 15px;
+        padding: 2rem;
+        padding-top: 4rem;
+      }
+
+      .product-img img {
+        width: 100%;
       }
 
       .product-info {
-        padding: 15px;
+        padding: 1.5rem;
         list-style-position: inside;
       }
 
       .rating-stars {
-        margin-bottom: 15px;
+        margin-bottom: 1.5rem;
         color: #ff9529;
       }
 
       .price {
-        font-size: 16px;
         background-color: var(--color3);
         display: inline-block;
-        padding: 5px;
+        padding: 0.5rem;
         border-radius: 3px;
         color: white;
         font-weight: bold;
-        margin-bottom: 15px;
+        margin-bottom: 1.5rem;
       }
 
-      .price span {
+      /* .price span {
         text-decoration: line-through;
-        font-size: 12px;
-      }
+        font-size: 1.2rem;
+      } */
 
       .product-specs {
-        padding-top: 10px;
-        line-height: 20px;
+        padding-top: 1rem;
+        line-height: 1.8;
       }
 
       .first-btn {
         background-color: var(--color1);
         border: none;
         color: white;
-        padding: 12px 15px;
+        padding: 1.2rem 1.5rem;
         transition: all 0.3s ease-in;
         cursor: pointer;
-        /* border-radius: 0 0 3px 3px; */
+        font-weight: bold;
       }
 
       .first-btn:hover {
@@ -95,13 +129,13 @@
     </style>
   </head>
   <body>
-    <div class="product" id="id-1">
+    <div class="product best-seller" id="id-1" data-label="Best Seller">
       <div class="product-img">
-        <img src="" width="300px" alt="" />
+        <img src="" alt="" />
       </div>
       <div class="product-info">
         <div class="rating-stars"></div>
-        <div class="price">$999.99 <span>$1299.99</span></div>
+        <div class="price"><span></span></div>
         <div>
           <div class="product-name"></div>
           <ul class="product-specs"></ul>
@@ -112,16 +146,12 @@
 
     <script>
       let myData;
-      let xhr = new XMLHttpRequest();
-      xhr.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-          myData = JSON.parse(this.responseText);
+      fetch("data/products.json")
+        .then((res) => res.json())
+        .then((data) => {
+          myData = data;
           fillProduct("id-1", "ultraPortable", 0);
-        }
-      };
-      xhr.open("GET", "data/products.json", true);
-      xhr.send();
-
+        });
       fillProduct = (productId, categoryName, index) => {
         let productImg = document.querySelector(
           `#${productId} .product-img img`
@@ -132,7 +162,7 @@
         );
         let productPrice = document.querySelector(`#${productId} .price`);
         let productData =
-          myData.laptopCategory[categoryName].categoryList[index];
+          myData.laptopCategory[categoryName].laptopsList[index];
         document.querySelector(
           ".rating-stars"
         ).innerHTML = `<i class="fas fa-star"></i>

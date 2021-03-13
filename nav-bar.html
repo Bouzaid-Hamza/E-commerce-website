@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="js/glide.min.js"></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
       integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/glide.core.min.css" />
+    <link rel="stylesheet" href="css/glide.theme.min.css" />
     <style>
       * {
         box-sizing: border-box;
@@ -19,8 +22,33 @@
         text-decoration: none;
       }
 
+      p {
+        line-height: 1.5;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      h4 {
+        font-size: 1.4rem;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
       html {
-        font-size: 62.5%;
+        /* font-size: 62.5%; */
+        font-size: max(calc(0.0054 * 100vw), 9px);
         font-family: "Roboto", sans-serif;
         height: 10000px;
       }
@@ -328,7 +356,11 @@
       </nav>
     </header>
 
-    <!-- <main></main> -->
+    <div class="s1"></div>
+    <div class="s2"></div>
+    <div class="s3"></div>
+    <div class="s4"></div>
+    <div class="s5"></div>
 
     <script>
       document.getElementById("toggle-side-bar").onchange = function () {
@@ -351,11 +383,40 @@
       //   ).text();
       // }
       // load_home();
+
       // fetch("get-started-section.html")
       //   .then((res) => res.text())
       //   .then((data) => {
       //     console.log(data);
-      //     document.querySelector("main").innerHTML = data;
+      //     document.querySelector(".s1").innerHTML = data;
+      //   });
+
+      // fetch("product-item.html")
+      //   .then((res) => res.text())
+      //   .then((data) => {
+      //     console.log(data);
+      //     document.querySelector(".s2").innerHTML = data;
+      //   });
+
+      // fetch("features.html")
+      //   .then((res) => res.text())
+      //   .then((data) => {
+      //     console.log(data);
+      //     document.querySelector(".s3").innerHTML = data;
+      //   });
+
+      // fetch("user-review.html")
+      //   .then((res) => res.text())
+      //   .then((data) => {
+      //     console.log(data);
+      //     document.querySelector(".s4").innerHTML = data;
+      //   });
+
+      // fetch("contact-us.html")
+      //   .then((res) => res.text())
+      //   .then((data) => {
+      //     console.log(data);
+      //     document.querySelector(".s5").innerHTML = data;
       //   });
     </script>
   </body>

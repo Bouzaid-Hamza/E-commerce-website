@@ -5,25 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="js/glide.min.js"></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
       integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/glide.core.min.css" />
+    <link rel="stylesheet" href="css/glide.theme.min.css" />
     <style>
       * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
         text-decoration: none;
+        font-size: 1.6rem;
+        outline: none;
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      h4 {
+        font-size: 1.4rem;
+      }
+
+      button {
+        cursor: pointer;
       }
 
       html {
-        font-size: 62.5%;
+        /* font-size: 62.5%; */
+        font-size: max(calc(0.0054 * 100vw), 9px);
         font-family: "Roboto", sans-serif;
-        margin: 80px;
-        background-color: var(--color2);
       }
 
       :root {
@@ -36,13 +64,24 @@
         --color7: #2b8f1b;
       }
 
+      .best-sellers-section {
+        background-color: #eeeeee;
+        padding: 3rem;
+        overflow: hidden;
+      }
+
       .product {
         background-color: white;
+        position: relative;
+        width: 35rem;
         display: flex;
         flex-direction: column;
-        position: relative;
-        max-width: 35rem;
-        font-size: 1.4rem;
+        justify-content: space-between;
+        box-shadow: 1px 1px 15px grey;
+      }
+
+      .best-sellers-section :is(.glide__slides, .glide__track) {
+        overflow: visible;
       }
 
       .best-seller::before {
@@ -59,6 +98,7 @@
 
       .best-seller::after {
         content: attr(data-label);
+        font-size: 1.4rem;
         position: absolute;
         top: 0.7rem;
         padding: 0.8em;
@@ -66,13 +106,14 @@
         color: white;
         right: -1.6rem;
         background-color: var(--color7);
-        box-shadow: 2px 2px 15px rgba(26, 35, 126, 0.5);
+        box-shadow: -2px 2px 10px grey;
         border-bottom-left-radius: 15px;
       }
 
       .product-img {
-        padding: 2rem;
-        padding-top: 4rem;
+        padding: 3rem 2rem 0rem 2rem;
+        max-width: 30rem;
+        align-self: center;
       }
 
       .product-img img {
@@ -80,12 +121,12 @@
       }
 
       .product-info {
-        padding: 1.5rem;
+        padding: 0.5rem 1.5rem;
         list-style-position: inside;
       }
 
       .rating-stars {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         color: #ff9529;
       }
 
@@ -96,17 +137,16 @@
         border-radius: 3px;
         color: white;
         font-weight: bold;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
       }
-
-      /* .price span {
-        text-decoration: line-through;
-        font-size: 1.2rem;
-      } */
 
       .product-specs {
         padding-top: 1rem;
-        line-height: 1.8;
+        line-height: 1.7;
+      }
+
+      .product-specs li {
+        font-size: 1.4rem;
       }
 
       .first-btn {
@@ -124,33 +164,147 @@
       }
 
       .product .first-btn {
-        width: 100%;
+        margin: 4px;
+      }
+
+      .best-sellers-section .glide__slide {
+        height: auto;
+        align-items: stretch;
+        display: flex;
+      }
+
+      .best-sellers-section .glide__arrows button {
+        background-color: var(--color2);
       }
     </style>
   </head>
   <body>
-    <div class="product best-seller" id="id-1" data-label="Best Seller">
-      <div class="product-img">
-        <img src="" alt="" />
+    <section class="best-sellers-section">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <div
+              class="product best-seller"
+              id="bs-id-1"
+              data-label="Best Seller"
+            >
+              <div class="product-img">
+                <img src="" alt="" />
+              </div>
+              <div class="product-info">
+                <div class="rating-stars"></div>
+                <div class="price"><span></span></div>
+                <div>
+                  <div class="product-name"></div>
+                  <ul class="product-specs"></ul>
+                </div>
+              </div>
+              <button class="first-btn">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div
+              class="product best-seller"
+              id="bs-id-2"
+              data-label="Best Seller"
+            >
+              <div class="product-img">
+                <img src="" alt="" />
+              </div>
+              <div class="product-info">
+                <div class="rating-stars"></div>
+                <div class="price"><span></span></div>
+                <div>
+                  <div class="product-name"></div>
+                  <ul class="product-specs"></ul>
+                </div>
+              </div>
+              <button class="first-btn">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div
+              class="product best-seller"
+              id="bs-id-3"
+              data-label="Best Seller"
+            >
+              <div class="product-img">
+                <img src="" alt="" />
+              </div>
+              <div class="product-info">
+                <div class="rating-stars"></div>
+                <div class="price"><span></span></div>
+                <div>
+                  <div class="product-name"></div>
+                  <ul class="product-specs"></ul>
+                </div>
+              </div>
+              <button class="first-btn">ADD TO CART</button>
+            </div>
+          </li>
+          <li class="glide__slide">
+            <div
+              class="product best-seller"
+              id="bs-id-4"
+              data-label="Best Seller"
+            >
+              <div class="product-img">
+                <img src="" alt="" />
+              </div>
+              <div class="product-info">
+                <div class="rating-stars"></div>
+                <div class="price"><span></span></div>
+                <div>
+                  <div class="product-name"></div>
+                  <ul class="product-specs"></ul>
+                </div>
+              </div>
+              <button class="first-btn">ADD TO CART</button>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="product-info">
-        <div class="rating-stars"></div>
-        <div class="price"><span></span></div>
-        <div>
-          <div class="product-name"></div>
-          <ul class="product-specs"></ul>
-        </div>
-      </div>
-      <button class="first-btn">ADD TO CART</button>
-    </div>
 
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
     <script>
       let myData;
+      let bestSellersConfig = {
+        type: "carousel",
+        perView: 4,
+        // autoplay: 4000,
+        hoverpause: "true",
+        animationDuration: 600,
+        focusAt: "center",
+        breakpoints: {
+          1320: {
+            perView: 3,
+          },
+          1000: {
+            perView: 2,
+          },
+          655: {
+            perView: 1,
+          },
+        },
+      };
+
       fetch("data/products.json")
         .then((res) => res.json())
         .then((data) => {
           myData = data;
-          fillProduct("id-1", "ultraPortable", 0);
+          fillProduct("bs-id-1", "ultraPortable", 0);
+          fillProduct("bs-id-2", "Gaming", 1);
+          fillProduct("bs-id-3", "Business", 1);
+          fillProduct("bs-id-4", "ultraPortable", 5);
+          new Glide(".best-sellers-section", bestSellersConfig).mount();
         });
       fillProduct = (productId, categoryName, index) => {
         let productImg = document.querySelector(
@@ -164,7 +318,7 @@
         let productData =
           myData.laptopCategory[categoryName].laptopsList[index];
         document.querySelector(
-          ".rating-stars"
+          `#${productId} .rating-stars`
         ).innerHTML = `<i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>

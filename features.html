@@ -20,10 +20,35 @@
       }
 
       html {
-        font-size: 62.5%;
+        /* font-size: 62.5%; */
+        font-size: max(calc(0.0054 * 100vw), 9px);
         font-family: "Roboto", sans-serif;
-        margin: 80px;
+        /* margin: 80px; */
         background-color: var(--color2);
+      }
+
+      p {
+        line-height: 1.5;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      h4 {
+        font-size: 1.4rem;
+      }
+
+      button {
+        cursor: pointer;
       }
 
       :root {
@@ -39,7 +64,10 @@
       .features {
         display: flex;
         flex-wrap: wrap;
-        max-width: 1200px;
+        /* max-width: 1200px; */
+        padding: 8rem 0;
+        background-color: white;
+        justify-content: center;
       }
       .feature-item {
         background-color: white;
@@ -48,6 +76,7 @@
         align-items: center;
         justify-content: space-around;
         padding: 2.5rem;
+        width: max(calc(95vw / 4), 30rem);
       }
       .features i {
         font-size: 2.5rem;
@@ -66,7 +95,7 @@
         text-align: center;
         color: var(--color2);
         margin-top: 1.5rem;
-        max-width: 25rem;
+        max-width: 32rem;
       }
     </style>
   </head>
@@ -75,34 +104,34 @@
       <div class="feature-item">
         <i class="fa fa-umbrella"></i>
         <div class="feature-name">24/7 Support</div>
-        <div class="feature-description">
+        <p class="feature-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
           obcaecati inventore eaque.
-        </div>
+        </p>
       </div>
       <div class="feature-item">
         <i class="fa fa-lock"></i>
         <div class="feature-name">Advanced Security</div>
-        <div class="feature-description">
+        <p class="feature-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
           obcaecati inventore eaque.
-        </div>
+        </p>
       </div>
       <div class="feature-item">
         <i class="fa fa-rocket"></i>
         <div class="feature-name">Fast Delevery</div>
-        <div class="feature-description">
+        <p class="feature-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
           obcaecati inventore eaque.
-        </div>
+        </p>
       </div>
       <div class="feature-item">
         <i class="fa fa-check"></i>
         <div class="feature-name">High Quality Products</div>
-        <div class="feature-description">
+        <p class="feature-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
           obcaecati inventore eaque.
-        </div>
+        </p>
       </div>
     </div>
     <div class="load" style="max-width: 1200px"></div>

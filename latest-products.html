@@ -64,58 +64,43 @@
         --color7: #2b8f1b;
       }
 
-      .best-sellers-section {
+      .latest-products-section {
         background-color: #eeeeee;
-        padding: 3rem;
-        overflow: hidden;
-        position: relative;
+        display: flex;
+        justify-content: center;
       }
 
-      .product {
+      .latest-products-section * {
+        font-size: 1.2rem;
+      }
+
+      .latest-products-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: center;
+      }
+
+      .latest-products-section .product {
         background-color: white;
         position: relative;
-        width: 35rem;
+        min-width: 30rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         box-shadow: 1px 1px 15px grey;
-        margin-right: 6rem;
+        margin: 1.5rem 1.5rem;
       }
 
-      .best-seller::before {
-        content: "";
-        width: 3rem;
-        height: 3rem;
-        background-color: rgb(0, 150, 0);
-        position: absolute;
-        right: -1rem;
-        transform: rotate(45deg);
-        top: 3rem;
-        z-index: -1;
-      }
-
-      .best-seller::after {
-        content: attr(data-label);
-        font-size: 1.4rem;
-        position: absolute;
-        top: 0.7rem;
-        padding: 0.8em;
-        text-align: center;
-        color: white;
-        right: -1.6rem;
-        background-color: var(--color7);
-        box-shadow: -2px 2px 10px grey;
-        border-bottom-left-radius: 15px;
-      }
-
-      .product-img {
+      .latest-products-section .product-img {
         padding: 3rem 2rem 0rem 2rem;
-        max-width: 30rem;
+        max-width: 25rem;
         align-self: center;
       }
 
-      .product-img img {
+      .latest-products-section img {
         width: 100%;
+        max-height: 15rem;
       }
 
       .product-info {
@@ -160,102 +145,38 @@
       .product .first-btn {
         margin: 4px;
       }
-
-      .best-sellers-section :is(.glide__slides, .glide__track) {
-        overflow: visible;
-      }
-
-      .best-sellers-section .glide__slide {
-        height: auto;
-        align-items: stretch;
-        display: flex;
-        justify-content: center;
-      }
-
-      .best-sellers-section .glide__arrow {
-        border: none;
-        border-radius: 7px;
-        opacity: 0.5;
-        transition: opacity 0.2s ease-in-out;
-      }
-
-      .best-sellers-section .glide__arrow:hover {
-        opacity: 1;
-      }
-
-      .best-sellers-section .glide__arrows button {
-        background-color: var(--color2);
-      }
     </style>
   </head>
   <body>
-    <section class="best-sellers-section">
-      <div class="glide__track" data-glide-el="track">
-        <ul class="glide__slides"></ul>
-      </div>
-
-      <div class="glide__arrows" data-glide-el="controls">
-        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-          <i class="fas fa-arrow-left"></i>
-        </button>
-        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-          <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
+    <section class="latest-products-section">
+      <div class="latest-products-container"></div>
     </section>
 
     <script>
       let myData;
-      let bestSellersConfig = {
-        type: "carousel",
-        perView: 4,
-        gap: 0,
-        autoplay: 4000,
-        hoverpause: "true",
-        animationDuration: 1500,
-        focusAt: "center",
-        breakpoints: {
-          1320: {
-            perView: 3,
-          },
-          1000: {
-            perView: 2,
-          },
-          655: {
-            perView: 1,
-          },
-        },
-      };
       fetch("data/products.json")
         .then((res) => res.json())
         .then((data) => {
           myData = data;
-          let bsId = 1;
-          let bestSellersObject = data.bestSellers;
-          let bestSellersCategories = Object.keys(bestSellersObject);
-          bestSellersCategories.forEach((item) => {
-            let laptopsList = bestSellersObject[item].laptopsList;
+          let lpId = 1;
+          let latestLaptopsObject = data.latestLaptops;
+          let latestLaptopsCategories = Object.keys(latestLaptopsObject);
+          latestLaptopsCategories.forEach((item) => {
+            let laptopsList = latestLaptopsObject[item].laptopsList;
             laptopsList.forEach((item2, index) => {
-              addBestSellerBody(
-                ".best-sellers-section .glide__slides",
-                `product best-seller`,
-                `Best Seller`,
-                `bs-id-${bsId}`
+              addProductBody(
+                ".latest-products-container",
+                "product",
+                `lp-id-${lpId}`
               );
-              fillProduct(`bs-id-${bsId}`, item, index);
-              bsId++;
+              fillProduct(`lp-id-${lpId}`, item, index);
+              lpId++;
             });
           });
-          new Glide(".best-sellers-section", bestSellersConfig).mount();
         });
 
-      addBestSellerBody = (
-        containerClassName,
-        className,
-        dataLabel = "",
-        productId
-      ) => {
-        let htmlCode = `<li class="glide__slide"><div class= '${className}' id=${productId} data-label='${dataLabel}'>
+      addProductBody = (containerClassName, className, productId) => {
+        let htmlCode = `<div class=${className} id=${productId}>
       	<div class="product-img">
       		<img src="" alt="" />
       	</div>
@@ -268,7 +189,7 @@
       		</div>
       	</div>
       	<button class="first-btn">ADD TO CART</button>
-      </div></li>`;
+      </div>`;
         document.querySelector(`${containerClassName}`).innerHTML += htmlCode;
       };
 
@@ -285,10 +206,10 @@
         document.querySelector(
           `#${productId} .rating-stars`
         ).innerHTML = `<i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>`;
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>`;
         productImg.src = productData.laptopImg;
         productName.innerHTML = productData.laptopName;
         productPrice.innerHTML = productData.price;

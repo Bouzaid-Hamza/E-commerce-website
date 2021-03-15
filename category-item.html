@@ -44,10 +44,8 @@
       }
 
       html {
-        /* font-size: 62.5%; */
         font-size: max(calc(0.0054 * 100vw), 9px);
         font-family: "Roboto", sans-serif;
-        /* margin: 80px; */
         background-color: var(--color2);
       }
 
@@ -61,14 +59,28 @@
         --color7: #2b8f1b;
       }
 
+      .category-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
       .category-item {
         font-size: 1.4rem;
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         background-color: white;
+        margin: 2rem;
+        max-width: 50rem;
       }
 
       .category-img {
         padding: 4rem;
+      }
+
+      .category-img img {
+        width: 100%;
       }
 
       .category-name {
@@ -90,10 +102,6 @@
         background-color: var(--color2);
       }
 
-      .first-btn:focus {
-        outline: none;
-      }
-
       .category-item .first-btn {
         background-color: var(--color3);
         border: 1px solid var(--color3);
@@ -102,6 +110,7 @@
         transform: translateX(-50%);
         margin-bottom: 1.5rem;
         box-shadow: 0 0 5px rgb(134, 175, 252);
+        align-self: flex-start;
       }
 
       .category-item .first-btn:hover {
@@ -111,22 +120,33 @@
     </style>
   </head>
   <body>
-    <div class="category-item" id="id-2">
-      <div class="category-name">Ultraportable</div>
-      <div class="category-img">
-        <img src="" width="300px" alt="" />
-      </div>
-      <button class="first-btn">VIEW MORE</button>
-    </div>
+    <section class="category-section">
+      <div class="title">CATEGORIES</div>
+    </section>
 
     <script>
-      let myData;
+      const createCategoryItem = () => {
+        let htmlCode = `<div class="category-item" >
+          <div class="category-name"></div>
+          <div class="category-img">
+            <img src="" alt="" />
+          </div>
+          <button class="first-btn">VIEW MORE</button>
+        </div>`;
+        document.querySelector(".category-section").innerHTML += htmlCode;
+      };
+
       fetch("data/products.json")
         .then((res) => res.json())
         .then((data) => {
-          myData = data;
-          document.querySelector("#id-2 img").src =
-            myData.laptopCategory.ultraPortable.categoryImg;
+          let categoryNameList = Object.keys(data.allLaptops);
+          categoryNameList.forEach((item, index) => {
+            createCategoryItem();
+            document.querySelectorAll(".category-name")[index].innerHTML =
+              categoryNameList[index];
+            document.querySelectorAll(".category-img img")[index].src =
+              data.allLaptops[categoryNameList[index]].categoryImg;
+          });
         });
     </script>
   </body>

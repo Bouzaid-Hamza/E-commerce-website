@@ -1,342 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ecom website</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
       integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css\glide.core.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/glide.core.min.css" />
+    <link rel="stylesheet" href="css/glide.theme.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
-
   <body>
-    <!-- ============= first menu bar : ================ -->
+    <header class="nav-container nav-border-bottom">
+      <nav class="nav-bar">
+        <div class="logo"><i class="fas fa-laptop"></i> logoHere</div>
 
-    <header>
-      <nav class="menu-bar-first">
-        <div class="menu-bar-item shop-icon">
-          <a href=""> <i class="fa fa-shopping-bag"></i>Shooping Cart </a>
+        <div class="nav-content">
+          <input type="checkbox" id="toggle-side-bar" />
+
+          <ul class="nav-links">
+            <li>
+              <a href="">HOME</a>
+            </li>
+
+            <li class="drop-menu">
+              <input type="checkbox" id="open-category" />
+              <a href=""
+                ><label for="open-category" class="drop-category-icon"
+                  >&lt&lt</label
+                >
+                CATEGORY</a
+              >
+              <ul class="drop-list">
+                <li><a href="">Ultraportable</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">Gaming</a></li>
+                <li><a href="">3D Modeling</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="">ABOUT</a>
+            </li>
+
+            <li>
+              <a href="">CONTACT</a>
+            </li>
+          </ul>
+
+          <div class="shop-icon">
+            <a href=""><i class="fa fa-shopping-bag" data-label="0"></i></a>
+          </div>
+
+          <label for="toggle-side-bar" class="open-side-bar"
+            ><i class="fas fa-bars"></i
+          ></label>
+
+          <label for="toggle-side-bar" class="close-side-bar"
+            ><i class="fas fa-times"></i
+          ></label>
         </div>
-
-        <button class="menu-bar-item sign-in-btn">Sign in</button>
-
-        <button class="menu-bar-item join-now-btn">Join now</button>
       </nav>
     </header>
 
-    <!-- =============== second menu bar : ================= -->
+    <section class="get-started-section">
+      <div class="login-section">
+        <div class="item-1">
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+          <h1>Discount <span>10 - 30%</span> Off</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
+            delectus nisi necessitatibus aspernatur qui totam?
+          </p>
+        </div>
+        <div class="item-2">
+          <a href="" class="first-btn login-btn">LOG IN</a>
+          <a href="" class="first-btn signup-btn">SIGN UP</a>
+        </div>
+      </div>
 
-    <nav class="menu-bar">
-      <div class="logo"><i class="fas fa-laptop"></i> logoHere</div>
-
-      <input type="checkbox" id="toggle-side-bar" />
-
-      <ul>
-        <li>
-          <a href=""> <i class="fas fa-home"></i>HOME </a>
-        </li>
-
-        <li class="drop-menu">
-          <a>
-            <div class="drop-icon-click">&lt;</div>
-            <span><i class="fas fa-th-list"></i> CATEGORY</span>
-            <div class="drop-icon">></div>
-          </a>
-
-          <ul class="drop-list">
-            <li><a href="">GRAPHIC CARDS</a></li>
-            <li><a href="">PROCESSORS</a></li>
-            <li><a href="">LAPTOPS</a></li>
-            <li><a href="">ACCESSORIES</a></li>
-          </ul>
-
-          <ul class="drop-list-click">
-            <li><a href="">GRAPHIC CARDS</a></li>
-            <li><a href="">PROCESSORS</a></li>
-            <li><a href="">LAPTOPS</a></li>
-            <li><a href="">ACCESSORIES</a></li>
-          </ul>
-        </li>
-
-        <li>
-          <a href=""> <i class="fas fa-address-card"></i>ABOUT </a>
-        </li>
-
-        <li>
-          <a href=""> <i class="fas fa-phone"></i>CONTACT </a>
-        </li>
-      </ul>
-
-      <label for="toggle-side-bar"><i class="fas fa-bars"></i></label>
-
-      <label for="toggle-side-bar"><i class="fas fa-times"></i></label>
-    </nav>
-
-    <div class="head-img">
-      <!-- ================ Search bar + discription : ================= -->
-
-      <div class="disc-and-search-bar">
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa iusto
-          nisi voluptate, cupiditate quidem maiores.
-        </p>
-        <div class="search-bar">
-          <input type="text" placeholder="Search for product" />
+      <div class="search-section">
+        <h3>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi.
+        </h3>
+        <form action="" class="search-form">
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="Laptop name, Brand, Specs ..."
+          />
           <button><i class="fas fa-search"></i></button>
-        </div>
+        </form>
+        <h4><span>Exemple:</span> Gaming laptop, Asus, i7-8750H.</h4>
       </div>
+    </section>
 
-      <!-- ======= Carousel : ========== -->
-
-      <div class="product-carousel">
-        <p class="product-carousel-title">BEST SELLERS</p>
+    <section class="best-sellers-section">
+      <h4 class="title" data-aos="fade-up" data-aos-duration="1000">
+        BEST SELLERS
+      </h4>
+      <div class="best-sellers-content">
         <div
-          class="glide__track product-carousel-content"
+          class="glide__track"
           data-glide-el="track"
+          data-aos="fade-up"
+          data-aos-duration="1000"
         >
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <div class="product">
-                <div class="product-img">
-                  <img
-                    src="./img/Asus-gl504gv-thumb-1200x900-1560189851.webp"
-                    alt=""
-                  />
-                </div>
-                <div class="product-info">
-                  <div class="rating-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="price">
-                    <p>$999.99 <span>$1299.99</span</p>
-                  </div>
-                  Asus GL502VM Gaming laptop
-                  <ul>
-                    <li>Ram : 16 GB</li>
-                    <li>Graphic : Nvidia GTX 1060</li>
-                    <li>Processor : i7 6700HQ</li>
-                    <li>Hard drive : 512 SSD</li>
-                  </ul>
-                </div>
-                <button>ADD TO CART</button>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="product">
-                <div class="product-img">
-                  <img src="./img/asus-rog-strix-g-g53.jpg" alt="" />
-                </div>
-                <div class="product-info">
-                  <div class="rating-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="price">
-                    <p>$999.99 <span>$1299.99</span</p>
-                  </div>
-                  Asus GL502VM Gaming laptop
-                  <ul>
-                    <li>Ram : 16 GB</li>
-                    <li>Graphic : Nvidia GTX 1060</li>
-                    <li>Processor : i7 6700HQ</li>
-                    <li>Hard drive : 512 SSD</li>
-                  </ul>
-                </div>
-                <button>ADD TO CART</button>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="product">
-                <div class="product-img">
-                  <img src="./img/34-235-011-V21.jpg" alt="" />
-                </div>
-                <div class="product-info">
-                  <div class="rating-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="price">
-                    <p>$999.99 <span>$1299.99</span></p>
-                  </div>
-                  Asus GL502VM Gaming laptop
-                  <ul>
-                    <li>Ram : 16 GB</li>
-                    <li>Graphic : Nvidia GTX 1060</li>
-                    <li>Processor : i7 6700HQ</li>
-                    <li>Hard drive : 512 SSD</li>
-                  </ul>
-                </div>
-                <button>ADD TO CART</button>
-              </div>
-            </li>
-          </ul>
+          <ul class="glide__slides"></ul>
         </div>
 
-        <div class="next-last-icons glide__arrows" data-glide-el="controls">
-          <div class="last glide__arrow glide__arrow--left" data-glide-dir="<">
-            <span>&lt;</span>
-          </div>
-
-          <div class="next glide__arrow glide__arrow--right" data-glide-dir=">">
-            <span>></span>
-          </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <i class="fas fa-arrow-right"></i>
+          </button>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Category -->
-    
-    <div class="category-container">
-      <div class="category">
-        <div class="item title">CATEGORY</div>
-        <div class="item item1">
-          <p>GRAPHIC CARDS</p>
-          <div>
-            <img src="./img/dust-proof-card.png" alt="">
-          </div>          
-          <button>VIEW MORE</button>
+    <section class="category-section">
+      <h4 class="title" data-aos="fade-up" data-aos-duration="1000">
+        CATEGORIES
+      </h4>
+      <div class="category-content"></div>
+    </section>
+
+    <section class="latest-products-section">
+      <h4 class="title" data-aos="fade-up" data-aos-duration="1000">
+        LATEST PRODUCTS
+      </h4>
+      <div class="latest-products-container"></div>
+    </section>
+
+    <section class="features-section">
+      <h4 class="title" data-aos="fade-up" data-aos-duration="1000">
+        FEATURES
+      </h4>
+      <div class="features-content">
+        <div class="feature-item" data-aos="fade-up" data-aos-duration="1000">
+          <i class="fa fa-umbrella"></i>
+          <h4 class="feature-name">24/7 Support</h4>
+          <p class="feature-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            obcaecati inventore eaque.
+          </p>
         </div>
-        <div class="item item2">
-          <p>PROCESSORS</p>
-          <div>
-            <img src="./img/19-118-122-V16.jpg" alt="">
-          </div>
-          <button>VIEW MORE</button>
+        <div class="feature-item" data-aos="fade-up" data-aos-duration="1000">
+          <i class="fa fa-lock"></i>
+          <h4 class="feature-name">Advanced Security</h4>
+          <p class="feature-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            obcaecati inventore eaque.
+          </p>
         </div>
-        <div class="item item3">
-          <p>LAPTOPS</p>
-          <div>
-            <img src="./img/best-gaming-laptops-under-1000-dollars.jpg" alt="">
-          </div>
-          <button>VIEW MORE</button>
+        <div class="feature-item" data-aos="fade-up" data-aos-duration="1000">
+          <i class="fa fa-rocket"></i>
+          <h4 class="feature-name">Fast Delevery</h4>
+          <p class="feature-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            obcaecati inventore eaque.
+          </p>
         </div>
-        <div class="item item4">
-          <p>ACCESSORIES</p>
-          <div>
-            <img src="./img/Hc9ef78e51a174076afa92adbbd96bd3e9.jpg" alt="">
-            <img src="./img/Hc74c91e6d25942a8b9da9317094d5aacJ.jpg" alt="">
-            <img src="./img/Habb2b9ce30da4f0e935f38485ca93af7A.jpg" alt="">
-          </div>
-          <button>VIEW MORE</button>
+        <div class="feature-item" data-aos="fade-up" data-aos-duration="1000">
+          <i class="fa fa-check"></i>
+          <h4 class="feature-name">High Quality Products</h4>
+          <p class="feature-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            obcaecati inventore eaque.
+          </p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Latest products -->
-
-    <div class="latest-products-container">
-      <div class="latest-products">
-        <div class="title">LATEST PRODUCTS</div>
-        <div class="glide__track product-carousel-content" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">
-              <div class="latest-product">
-                <div class="latest-product-img">
-                  <img src="./img/Hc9ef78e51a174076afa92adbbd96bd3e9.jpg" alt="">
-                </div>
-                <div class="latest-product-info">
-                  <div class="rating-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="price">
-                    <p>$39.99 <span>$49.99</span></p>
-                  </div>
-                  Wireless Headphones WH-CH510: Wireless Bluetooth On-Ear Headset with Mic.
-                </div>
-                <button>ADD TO CART</button>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="latest-product">
-                <div class="latest-product-img">
-                  <img src="./img/dust-proof-card.png" alt="">
-                </div>
-                <div class="latest-product-info">
-                  <div class="rating-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="price">
-                    <p>$39.99 <span>$49.99</span></p>
-                  </div>
-                  Wireless Headphones WH-CH510: Wireless Bluetooth On-Ear Headset with Mic.
-                </div>
-                <button>ADD TO CART</button>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="latest-product">
-                <div class="latest-product-img">
-                  <img src="./img/960x0.jpg" alt="">
-                </div>
-                <div class="latest-product-info">
-                  <div class="rating-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="price">
-                    <p>$39.99 <span>$49.99</span></p>
-                  </div>
-                  Wireless Headphones WH-CH510: Wireless Bluetooth On-Ear Headset with Mic.
-                </div>
-                <button>ADD TO CART</button>
-              </div>
-            </li>
-            <li class="glide__slide">
-              <div class="latest-product">
-                <div class="latest-product-img">
-                  <img src="./img/Habb2b9ce30da4f0e935f38485ca93af7A.jpg" alt="">
-                </div>
-                <div class="latest-product-info">
-                  <div class="rating-stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                  </div>
-                  <div class="price">
-                    <p>$39.99 <span>$49.99</span></p>
-                  </div>
-                  Wireless Headphones WH-CH510: Wireless Bluetooth On-Ear Headset with Mic.
-                </div>
-                <button>ADD TO CART</button>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    
-
-    <script src="js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/glide.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/aos.js"></script>
   </body>
 </html>

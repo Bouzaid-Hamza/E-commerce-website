@@ -145,6 +145,27 @@ const fillProductBody = (data, productId, categoryName, index) => {
 };
 
 // ===========================
+// User review section
+// ===========================
+
+let reviewConfig = {
+	type: "carousel",
+	perView: 1,
+	gap: 40,
+	autoplay: 4000,
+	hoverpause: "true",
+	focusAt: "center",
+	animationDuration: "1000",
+	breakpoints: {
+	  1150: {
+		perView: 1,
+	  },
+	},
+  };
+
+  new Glide(".glide-reviews", reviewConfig).mount();
+
+// ===========================
 // Loading data from json file
 // ===========================
 

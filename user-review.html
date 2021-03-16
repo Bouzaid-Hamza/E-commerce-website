@@ -20,13 +20,13 @@
         margin: 0;
         padding: 0;
         text-decoration: none;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         outline: none;
       }
 
       p {
-        line-height: 1.5;
         font-size: 1.6rem;
+        line-height: 1.5;
       }
 
       h1 {
@@ -42,7 +42,7 @@
       }
 
       h4 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
       }
 
       button {
@@ -50,11 +50,8 @@
       }
 
       html {
-        /* font-size: 62.5%; */
         font-size: max(calc(0.0054 * 100vw), 9px);
         font-family: "Roboto", sans-serif;
-        /* margin: 80px; */
-        /* background-color: var(--color2); */
       }
 
       :root {
@@ -67,8 +64,8 @@
         --color7: #2b8f1b;
       }
 
-      .user-review-section {
-        min-height: 55rem;
+      .users-reviews-section {
+        min-height: 65rem;
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(100, 7, 100, 0.8)),
           url("img/pexels-photo-238118.jpeg");
         background-size: cover;
@@ -78,33 +75,40 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        overflow: hidden;
+        padding-bottom: 3rem;
       }
 
-      .user-review-section h2 {
+      .users-reviews-section h2 {
         color: rgb(214, 164, 0);
       }
 
-      .user-review-section > p {
+      .users-reviews-section > p {
         max-width: 600px;
         text-align: center;
       }
 
-      .user-review-section hr {
+      .users-reviews-section hr {
         width: 10rem;
         padding: 0.2rem;
         border: none;
         background-color: rgb(0, 174, 255);
       }
 
+      .glide-reviews {
+        position: relative;
+        width: min(55rem, 95vw);
+        margin: 0 1.5rem;
+      }
+
       .user-review {
         display: flex;
         align-items: center;
+        justify-content: center;
         padding: 2rem;
-        max-width: 55rem;
         border: 1px solid white;
         position: relative;
         background-color: var(--color6);
+        flex-wrap: wrap;
       }
 
       .user-review::before {
@@ -117,46 +121,34 @@
       }
 
       .user-img img {
-        width: 8rem;
+        max-height: 8rem;
         border-radius: 50%;
         margin-right: 2rem;
+      }
+
+      .user-review div:last-child {
+        min-height: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
       }
 
       .user-name {
         color: rgb(255, 196, 0);
       }
 
-      .user-review div:last-child {
-        justify-content: space-between;
-        min-height: 14rem;
-        display: flex;
-        flex-direction: column;
+      .review {
+        max-width: 40rem;
       }
 
-      .user-review-section .glide__track {
-        max-width: 55rem;
-      }
-
-      @media only screen and (max-width: 550px) {
-        .user-review {
-          max-width: 25rem;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-        }
-
-        .user-img img {
-          margin: 0;
-        }
-
-        .user-review-section .glide__track {
-          max-width: 25rem;
-        }
+      .glide-reviews .glide__bullets {
+        position: absolute;
+        top: 110%;
       }
     </style>
   </head>
   <body>
-    <section class="user-review-section">
+    <section class="users-reviews-section">
       <h2>What Client’s Say</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dicta
@@ -164,68 +156,77 @@
         accusantium.
       </p>
       <hr />
-      <div class="glide__track product-carousel-content" data-glide-el="track">
-        <ul class="glide__slides">
-          <li class="glide__slide">
-            <div class="user-review">
-              <div class="user-img">
-                <img src="img/profile_user.jpg" alt="" />
+      <div class="glide-reviews">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="user-review">
+                <div class="user-img">
+                  <img src="img/profile_user.jpg" alt="" />
+                </div>
+                <div>
+                  <h3 class="user-name">Michael Logan</h3>
+                  <p class="review">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                    saepe, nobis debitis repellendus incidunt veritatis,
+                    perspiciatis molestiae fuga excepturi earum explicabo,
+                    eveniet ipsam optio odit?
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 class="user-name">Michael Logan</h3>
-                <p class="review">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  saepe, nobis debitis repellendus incidunt veritatis,
-                  perspiciatis molestiae fuga excepturi earum explicabo, eveniet
-                  ipsam optio odit?
-                </p>
+            </li>
+            <li class="glide__slide">
+              <div class="user-review">
+                <div class="user-img">
+                  <img src="img/Max-R_Headshot (1).jpg" alt="" />
+                </div>
+                <div>
+                  <h3 class="user-name">Michael Logan</h3>
+                  <p class="review">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                    saepe, nobis debitis repellendus incidunt veritatis,
+                    perspiciatis molestiae fuga excepturi earum explicabo,
+                    eveniet ipsam optio odit?
+                  </p>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="glide__slide">
-            <div class="user-review">
-              <div class="user-img">
-                <img src="img/Max-R_Headshot (1).jpg" alt="" />
+            </li>
+            <li class="glide__slide">
+              <div class="user-review">
+                <div class="user-img">
+                  <img src="img/Greg-Emerson-edit-2.jpg" alt="" />
+                </div>
+                <div>
+                  <h3 class="user-name">Michael Logan</h3>
+                  <p class="review">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                    saepe, nobis debitis repellendus incidunt veritatis,
+                    perspiciatis molestiae fuga excepturi earum explicabo,
+                    eveniet ipsam optio odit?
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 class="user-name">Michael Logan</h3>
-                <p class="review">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  saepe, nobis debitis repellendus incidunt veritatis,
-                  perspiciatis molestiae fuga excepturi earum explicabo, eveniet
-                  ipsam optio odit?
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="glide__slide">
-            <div class="user-review">
-              <div class="user-img">
-                <img src="img/Greg-Emerson-edit-2.jpg" alt="" />
-              </div>
-              <div>
-                <h3 class="user-name">Michael Logan</h3>
-                <p class="review">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  saepe, nobis debitis repellendus incidunt veritatis,
-                  perspiciatis molestiae fuga excepturi earum explicabo, eveniet
-                  ipsam optio odit?
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
       </div>
     </section>
 
     <script>
       let reviewConfig = {
         type: "carousel",
-        perView: 2,
+        perView: 1,
         gap: "10px",
         autoplay: "4000",
         hoverpause: "true",
-        animationDuration: "2000",
+        focusAt: "center",
+        animationDuration: "1000",
         breakpoints: {
           1150: {
             perView: 1,
@@ -233,7 +234,7 @@
         },
       };
 
-      new Glide(".user-review-section", reviewConfig).mount();
+      new Glide(".glide-reviews", reviewConfig).mount();
     </script>
   </body>
 </html>

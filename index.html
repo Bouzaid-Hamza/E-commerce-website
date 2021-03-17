@@ -26,31 +26,31 @@
 
           <ul class="nav-links">
             <li>
-              <a href="">HOME</a>
+              <a>HOME</a>
             </li>
 
             <li class="drop-menu">
               <input type="checkbox" id="open-category" />
-              <a href=""
+              <a
                 ><label for="open-category" class="drop-category-icon"
                   >&lt&lt</label
                 >
                 CATEGORY</a
               >
               <ul class="drop-list">
-                <li><a href="">Ultraportable</a></li>
-                <li><a href="">Business</a></li>
-                <li><a href="">Gaming</a></li>
-                <li><a href="">3D Modeling</a></li>
+                <li><a>Ultraportable</a></li>
+                <li><a>Business</a></li>
+                <li><a>Gaming</a></li>
+                <li><a>3D-Modeling</a></li>
               </ul>
             </li>
 
             <li>
-              <a href="">ABOUT</a>
+              <a>ABOUT</a>
             </li>
 
             <li>
-              <a href="">CONTACT</a>
+              <a>CONTACT</a>
             </li>
           </ul>
 
@@ -131,7 +131,9 @@
         <h4 class="title" data-aos="fade-up" data-aos-duration="1000">
           CATEGORIES
         </h4>
-        <div class="category-content"></div>
+        <div class="category-wrapper">
+          <div class="category-content"></div>
+        </div>
       </section>
 
       <section class="latest-products-section">
@@ -186,61 +188,65 @@
           CLIENTS REVIEWS
         </h4>
         <div class="users-reviews-content">
-          <h2>What Client’s Say</h2>
-          <p>
+          <h2 data-aos="fade-up" data-aos-duration="1000">What Client’s Say</h2>
+          <p data-aos="fade-up" data-aos-duration="1000">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dicta
             recusandae odit voluptas ducimus assumenda ut architecto blanditiis
             fuga accusantium.
           </p>
-          <hr />
-          <div class="glide-reviews">
+          <hr data-aos="fade-up" data-aos-duration="1000" />
+          <div
+            class="glide-reviews"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides">
                 <li class="glide__slide">
                   <div class="user-review">
                     <div class="user-img">
-                      <img src="img/profile_user.jpg" alt="" />
+                      <img src="img/profile_user.jpg" />
                     </div>
                     <div>
                       <h3 class="user-name">Michael Logan</h3>
-                      <p class="review">
+                      <em class="review">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Sed saepe, nobis debitis repellendus incidunt veritatis,
                         perspiciatis molestiae fuga excepturi earum explicabo,
                         eveniet ipsam optio odit?
-                      </p>
+                      </em>
                     </div>
                   </div>
                 </li>
                 <li class="glide__slide">
                   <div class="user-review">
                     <div class="user-img">
-                      <img src="img/Max-R_Headshot (1).jpg" alt="" />
+                      <img src="img/Max-R_Headshot (1).jpg" />
                     </div>
                     <div>
                       <h3 class="user-name">Michael Logan</h3>
-                      <p class="review">
+                      <em class="review">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Sed saepe, nobis debitis repellendus incidunt veritatis,
                         perspiciatis molestiae fuga excepturi earum explicabo,
                         eveniet ipsam optio odit?
-                      </p>
+                      </em>
                     </div>
                   </div>
                 </li>
                 <li class="glide__slide">
                   <div class="user-review">
                     <div class="user-img">
-                      <img src="img/Greg-Emerson-edit-2.jpg" alt="" />
+                      <img src="img/Greg-Emerson-edit-2.jpg" />
                     </div>
                     <div>
                       <h3 class="user-name">Michael Logan</h3>
-                      <p class="review">
+                      <em class="review">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Sed saepe, nobis debitis repellendus incidunt veritatis,
                         perspiciatis molestiae fuga excepturi earum explicabo,
                         eveniet ipsam optio odit?
-                      </p>
+                      </em>
                     </div>
                   </div>
                 </li>
@@ -260,7 +266,11 @@
         <h4 class="title" data-aos="fade-up" data-aos-duration="1000">
           CONTACT US
         </h4>
-        <div class="contact-us-content">
+        <div
+          class="contact-us-content"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="contact-info">
             <h4>Feel Free To Contact With Us !</h4>
             <div>
@@ -326,7 +336,16 @@
       </section>
     </main>
 
-    <footer class="footer">copyright stuff</footer>
+    <footer>
+      <div>Follow us</div>
+      <div class="social-icons">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram-square"></i>
+      </div>
+      <hr />
+      <h4><span id="currentYear"></span> © All rights reserved</h4>
+    </footer>
 
     <script src="js/glide.min.js"></script>
     <script src="js/index.js"></script>

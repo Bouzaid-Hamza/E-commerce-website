@@ -59,7 +59,7 @@ const addBestSellerBody = (
 ) => {
 	let htmlCode = `<li class="glide__slide"><div class= '${className}' id=${productId} data-label='${dataLabel}'>
 	<div class="product-img">
-		<img src="" alt="" />
+		<img src="" />
 	</div>
 	<div class="product-info">
 		<div class="rating-stars"></div>
@@ -83,7 +83,7 @@ const createCategoryItem = () => {
 	data-aos-duration="1000">
 	  <div class="category-name"></div>
 	  <div class="category-img">
-		<img src="" alt="" />
+		<img src="" />
 	  </div>
 	  <button class="first-btn">VIEW MORE</button>
 	</div>`;
@@ -97,7 +97,7 @@ const createCategoryItem = () => {
 addProductBody = (containerClassName, className, productId) => {
 	let htmlCode = `<div class=${className} id=${productId} data-aos="fade-up" data-aos-duration="1000">
 	<div class="product-img">
-		<img src="" alt="" />
+		<img src="" />
 	</div>
 	<div class="product-info">
 		<div class="rating-stars"></div>
@@ -111,6 +111,27 @@ addProductBody = (containerClassName, className, productId) => {
 </div>`;
 	document.querySelector(`${containerClassName}`).innerHTML += htmlCode;
 };
+
+// ===========================
+// User review section
+// ===========================
+
+let reviewConfig = {
+	type: "carousel",
+	perView: 1,
+	gap: 40,
+	autoplay: 4000,
+	hoverpause: "true",
+	focusAt: "center",
+	animationDuration: "1000",
+	breakpoints: {
+	  1150: {
+		perView: 1,
+	  },
+	},
+  };
+
+  new Glide(".glide-reviews", reviewConfig).mount();
 
 // ===========================
 // Filling products with info
@@ -143,27 +164,6 @@ const fillProductBody = (data, productId, categoryName, index) => {
 	productSpecs.innerHTML += `<li>Hard drive : ${productData.storageSize}</li>`;
 	productSpecs.innerHTML += `<li>Operating System : ${productData.operatingSystem}</li>`;
 };
-
-// ===========================
-// User review section
-// ===========================
-
-let reviewConfig = {
-	type: "carousel",
-	perView: 1,
-	gap: 40,
-	autoplay: 4000,
-	hoverpause: "true",
-	focusAt: "center",
-	animationDuration: "1000",
-	breakpoints: {
-	  1150: {
-		perView: 1,
-	  },
-	},
-  };
-
-  new Glide(".glide-reviews", reviewConfig).mount();
 
 // ===========================
 // Loading data from json file
@@ -220,7 +220,42 @@ let reviewConfig = {
 		});
 
 		/* ---------------- Initializing anaimation on scroll -----------------*/
-		AOS.init();
-	});
+		// AOS.init();
+		init = [];
+		x = setInterval(function() {
+			init.push(AOS.init());
+			if (init.length >= 2) {
+				clearInterval(x);
+			}
+		}, 1000);
+	});	
 
-	
+// ===========================
+// Scroll to sections
+// ===========================
+
+document.querySelectorAll(".nav-links > li > a")[0].onclick = function() {
+  document.querySelector(".get-started-section").scrollIntoView({ behavior: 'smooth'});
+}
+
+document.querySelectorAll(".nav-links > li > a")[1].onclick = function() {
+  document.querySelector(".category-section").scrollIntoView({ behavior: 'smooth'});
+} 
+
+document.querySelectorAll(".nav-links > li > a")[3].onclick = function() {
+  document.querySelector(".contact-us-section").scrollIntoView({ behavior: 'smooth'});
+} 
+
+let catElmt = document.querySelectorAll(".drop-list a");
+for(let i=0; i<catElmt.length; i++) {
+  document.querySelectorAll(".drop-list a")[i].onclick = function() {
+    document.querySelectorAll(".category-item")[i].scrollIntoView({ behavior: 'smooth', block: 'center'});
+  }
+}
+
+// ===========================
+// Footer
+// ===========================
+
+let currentYear = new Date().getFullYear();
+document.querySelector("#currentYear").innerHTML = currentYear;

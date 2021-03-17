@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap");
+
 /* ==================
       Global modifications:
       ===================== */
@@ -32,13 +34,20 @@ h4 {
   font-size: 1.6rem;
 }
 
-button {
+button,
+a {
   cursor: pointer;
 }
 
 html {
   font-size: max(calc(0.0054 * 100vw), 9px);
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  max-width: 100%;
 }
 
 :root {
@@ -197,7 +206,7 @@ html {
   }
 
   .drop-list li a {
-    color: black;
+    color: var(--color2);
   }
 }
 
@@ -535,18 +544,18 @@ html {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  color: var(--color2);
 }
 
 .title {
-  color: white;
-  margin: 10rem 0;
-  background-color: var(--color6);
+  color: var(--color3);
+  margin: 10rem auto;
   padding: 1em;
-  width: 40em;
+  max-width: 20em;
+  width: 100%;
   text-align: center;
-  border-radius: 0.5rem;
   letter-spacing: 4px;
-  align-self: center;
+  border-bottom: 2px solid var(--color2);
 }
 
 .best-sellers-content {
@@ -597,17 +606,15 @@ html {
 
 .best-sellers-section .glide__arrow {
   border: none;
-  border-radius: 7px;
+  border-radius: 50%;
   opacity: 0.8;
   transition: opacity 0.2s ease-in-out;
+  color: var(--color2);
+  box-shadow: 0 0 10px black;
 }
 
 .best-sellers-section .glide__arrow:hover {
   opacity: 1;
-}
-
-.best-sellers-section .glide__arrows button {
-  background-color: var(--color1);
 }
 
 /* =====================================
@@ -617,16 +624,22 @@ html {
 .category-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.category-wrapper {
+  background-color: #eeeeee;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .category-content {
-  background-color: #eeeeee;
-  display: grid;
-  justify-items: center;
-  justify-content: center;
-  grid-gap: 10rem;
-  grid-template-columns: 1fr 1fr;
-  padding: 5rem 0;
+  max-width: 110rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 1.5rem;
+  justify-content: space-evenly;
 }
 
 .category-item {
@@ -634,25 +647,10 @@ html {
   flex-direction: column;
   justify-content: space-between;
   background-color: white;
-  max-width: 50rem;
+  width: 40rem;
   box-shadow: 1px 1px 15px grey;
-  margin: 0 1.5rem;
-}
-
-@media only screen and (min-width: 800px) {
-  .category-item:nth-child(odd) {
-    justify-self: end;
-  }
-  
-  .category-item:nth-child(even) {
-    justify-self: start;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .category-content {
-    grid-template-columns: 1fr;
-  }
+  margin: 5rem 0;
+  height: 40rem;
 }
 
 .category-img {
@@ -660,7 +658,8 @@ html {
 }
 
 .category-img img {
-  width: 100%;
+  /* width: 100%; */
+  max-height: 20rem;
 }
 
 .category-name {
@@ -668,7 +667,7 @@ html {
   background-color: var(--color1);
   color: white;
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .category-item .first-btn {
@@ -680,7 +679,7 @@ html {
 
 .category-item .first-btn:hover {
   background-color: var(--color5);
-} 
+}
 
 /* =====================================
       Latest products section :
@@ -689,6 +688,7 @@ html {
 .latest-products-section {
   display: flex;
   flex-direction: column;
+  color: var(--color2);
 }
 
 .latest-products-container {
@@ -860,6 +860,7 @@ html {
   padding: 5rem 1rem 10rem 1rem;
   justify-content: space-evenly;
   color: var(--color2);
+  margin-top: -5rem;
 }
 
 .contact-info {
@@ -871,10 +872,12 @@ html {
 }
 
 .contact-us-content i {
+  display: inline-flex;
+  justify-content: center;
   background-color: var(--color3);
   padding: 1rem;
   color: white;
-  min-width: 3.6rem;
+  width: 3.6rem;
   margin-right: 1rem;
   border-radius: 4px;
 }
@@ -925,4 +928,35 @@ textarea {
 textarea:focus {
   background-color: rgb(0 0 0 / 5%);
   outline: none;
+}
+
+/* =====================================
+      Footer :
+      ========================================*/
+
+footer {
+  height: 15rem;
+  /* display: block; */
+  background-color: var(--color1);
+  color: white;
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 1rem; */
+}
+
+.social-icons {
+  width: 9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer i {
+  font-size: 2.5rem;
+}
+
+footer hr {
+  width: 10rem;
 }
